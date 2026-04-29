@@ -1,0 +1,7 @@
+/* Remove these three lines: */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Replace with this single line: */
+@import "tailwindcss";
