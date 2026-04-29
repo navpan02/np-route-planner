@@ -191,7 +191,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
           lat: a.lat, lng: a.lng,
         })),
         agents: [{ id: agent.id, name: agent.name, start_address: agent.start_address ?? '', start_lat: agent.start_lat, start_lng: agent.start_lng }],
-        constraints: { ...constraints, min_cluster_size: 1 },
+        constraints: { ...constraints, min_cluster_size: 1, max_miles: 99999, max_stops: Math.max(constraints.max_stops, filtered.length) },
         plan_id: 'draw-route-preview',
       },
     });
@@ -478,7 +478,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
             <div className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
               <p className="font-semibold mb-1">No route generated</p>
               {(result.stats?.unassigned ?? 0) > 0
-                ? <p>All {result.stats.unassigned} addresses went unassigned — they may be too spread out for the current cluster radius ({constraints.cluster_radius_m}m). Try increasing Cluster Radius in constraints, or select more nearby addresses.</p>
+                ? <p>All {result.stats.unassigned} addresses could not be routed — they may be missing map coordinates (no lat/lng). Try reloading the address pool or re-running today's route plan from admin.</p>
                 : <p>No addresses could be assigned to a route.</p>
               }
             </div>
