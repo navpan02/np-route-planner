@@ -181,6 +181,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
     if (!filtered.length) { setError('No addresses selected.'); return; }
     if (!selectedAgent)   { setError('Select an agent first.'); return; }
     setGenerating(true); setError('');
+    setSaveStatus('idle'); 
 
     const agent = agents.find(a => a.id === selectedAgent);
     const { data, error: fnErr } = await supabase.functions.invoke('route-optimize', {
