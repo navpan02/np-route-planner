@@ -53,6 +53,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
     });
     setHistoryIdx(i => i + 1);
     setResult(null);
+    setSaveStatus('idle');
     setError('');
   }, [historyIdx]);
 
@@ -293,6 +294,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
 
       setSaveStatus('saved');
       onRouteSaved?.();
+      setTimeout(() => setSaveStatus(s => s === 'saved' ? 'idle' : s), 3000);
     } catch (e) {
       setError(e.message ?? 'Save failed');
       setSaveStatus('idle');
