@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Polyline, Polygon, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.min.js';
+import '@geoman-io/leaflet-geoman-free';
 import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
 
 // Fix Leaflet's default icon paths broken by bundlers
