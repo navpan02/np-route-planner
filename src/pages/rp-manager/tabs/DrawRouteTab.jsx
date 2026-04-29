@@ -180,8 +180,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
   const generate = async () => {
     if (!filtered.length) { setError('No addresses selected.'); return; }
     if (!selectedAgent)   { setError('Select an agent first.'); return; }
-    setGenerating(true); setError('');
-    setSaveStatus('idle'); 
+    setGenerating(true); setError(''); setSaveStatus('idle'); setConflict(null);
 
     const agent = agents.find(a => a.id === selectedAgent);
     const { data, error: fnErr } = await supabase.functions.invoke('route-optimize', {
@@ -434,7 +433,13 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
         <div className="p-4 border-b border-gray-100">
           <label className="block text-xs font-semibold text-gray-600 mb-1">Assign to Agent</label>
           <select
-            value={selectedAgent} onChange={e => setAgent(e.target.value)}
+            value={selectedAgent}
+            onChange={e => {
+              setAgent(e.target.value);
+              setSaveStatus('idle');
+              setConflict(null);
+              setResult(null);
+            }}
             className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
           >
             {agents.map(a => <option key={a.id} value={a.id}>{a.name}</option>)}
