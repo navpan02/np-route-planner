@@ -675,16 +675,30 @@ Deno.serve(async (req: Request) => {
     let clusters: Cluster[];
     let voronoiPreassign: Map<string, number> | null = null;
 
-    if (algo === 'hdbscan') {
-      const labelMap = hdbscan(valid, constraints.min_cluster_size);
-      clusters = buildClustersFromLabels(valid, labelMap, unassigned);
-    } else if (algo === 'voronoi') {
-      const { labels, agentPreassignment } = voronoiCluster(valid, agentStops, epsKm, constraints.min_cluster_size);
-      clusters = buildClustersFromLabels(valid, labels, unassigned);
-      voronoiPreassign = agentPreassignment;
+    const doClustering = (minSize: number, noiseOut: Stop[]): { clusters: Cluster[]; preassign: Map<string, number> | null } => {
+      if (algo === 'hdbscan') {
+        return { clusters: buildClustersFromLabels(valid, hdbscan(valid, minSize), noiseOut), preassign: null };
+      } else if (algo === 'voronoi') {
+        const { labels, agentPreassignment } = voronoiCluster(valid, agentStops, epsKm, minSize);
+        return { clusters: buildClustersFromLabels(valid, labels, noiseOut), preassign: agentPreassignment };
+      } else {
+        return { clusters: buildClustersFromLabels(valid, dbscan(valid, epsKm, minSize), noiseOut), preassign: null };
+      }
+    };
+
+    // First attempt with configured min_cluster_size; noise goes to a temp buffer
+    const firstPassNoise: Stop[] = [];
+    ({ clusters, preassign: voronoiPreassign } = doClustering(constraints.min_cluster_size, firstPassNoise));
+
+    if (clusters.length === 0 && valid.length > 0) {
+      // Dataset too sparse for configured min_cluster_size — retry with 1 so every
+      // address can form its own single-stop cluster. Also lift stop/mile caps.
+      ({ clusters, preassign: voronoiPreassign } = doClustering(1, unassigned));
+      constraints.max_stops = Math.max(constraints.max_stops, valid.length);
+      constraints.max_miles = 99999;
     } else {
-      const labelMap = dbscan(valid, epsKm, constraints.min_cluster_size);
-      clusters = buildClustersFromLabels(valid, labelMap, unassigned);
+      // First pass succeeded — move its noise points into unassigned
+      unassigned.push(...firstPassNoise);
     }
 
     // ── Phase 3: Agent assignment ────────────────────────────────────────────
