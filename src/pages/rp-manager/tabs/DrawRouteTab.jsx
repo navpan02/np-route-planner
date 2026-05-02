@@ -189,9 +189,10 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
         addresses: filtered.map(a => ({
           unique_id: a.id, address: a.address, city: a.city ?? '',
           state: a.state ?? '', zip: a.zip ?? '', address_type: a.address_type,
-          lat: a.lat, lng: a.lng,
+          lat: a.lat != null ? Number(a.lat) : null,
+          lng: a.lng != null ? Number(a.lng) : null,
         })),
-        agents: [{ id: agent.id, name: agent.name, start_address: agent.start_address ?? '', start_lat: agent.start_lat, start_lng: agent.start_lng }],
+        agents: [{ id: agent.id, name: agent.name, start_address: agent.start_address ?? '', start_lat: agent.start_lat != null ? Number(agent.start_lat) : null, start_lng: agent.start_lng != null ? Number(agent.start_lng) : null }],
         constraints: { ...constraints, min_cluster_size: 1, max_miles: 99999, max_stops: Math.max(constraints.max_stops, filtered.length) },
         plan_id: 'draw-route-preview',
       },
