@@ -603,7 +603,11 @@ Deno.serve(async (req: Request) => {
       ],
       cluster_radius_m: rawConstraints?.cluster_radius_m ?? 400,
       min_cluster_size: isPreview ? 1 : (rawConstraints?.min_cluster_size ?? 5),
-      clustering_algorithm: rawConstraints?.clustering_algorithm ?? 'dbscan',
+      // Default to voronoi for multi-agent plans — it partitions territory by
+      // agent start position before clustering, preventing overlap and snowball.
+      // Fall back to dbscan for single-agent or when explicitly overridden.
+      clustering_algorithm: rawConstraints?.clustering_algorithm ??
+        (agents.length > 1 ? 'voronoi' : 'dbscan'),
     };
 
     const supabase = createClient(
@@ -761,11 +765,12 @@ Deno.serve(async (req: Request) => {
         }
       }
 
-      // Pick the nearest agent that still has stop and mile capacity.
-      // Nearest-first produces geographically compact routes; fewest-stops
-      // (the old logic) caused routes to criss-cross across the map.
+      // Score = 60% load fraction + 40% distance fraction.
+      // Pure nearest-first causes a snowball (one agent accumulates all nearby
+      // clusters); pure fewest-stops ignores geography and causes criss-crossing.
+      // The blended score distributes load while still preferring nearby agents.
       let bestAgent = -1;
-      let bestDriveMi = Infinity;
+      let bestScore = Infinity;
 
       for (let a = 0; a < agentRunning.length; a++) {
         const ag = agentRunning[a];
@@ -775,8 +780,11 @@ Deno.serve(async (req: Request) => {
         const newMiles = ag.miles + driveMi + walkMi;
 
         if (newStops <= constraints.max_stops && newMiles <= constraints.max_miles) {
-          if (driveMi < bestDriveMi) {
-            bestDriveMi = driveMi;
+          const loadFraction = ag.stops / Math.max(constraints.max_stops, 1);
+          const distFraction = driveMi / Math.max(constraints.max_miles, 1);
+          const score = loadFraction * 0.6 + distFraction * 0.4;
+          if (score < bestScore) {
+            bestScore = score;
             bestAgent = a;
           }
         }
