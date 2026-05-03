@@ -430,7 +430,11 @@ function voronoiCluster(
 
   for (const [agentIdx, indices] of territoryMap.entries()) {
     const subPoints = indices.map(i => points[i]);
-    const subLabels = dbscan(subPoints, epsKm, minPts);
+    // Use minPts=1 inside each Voronoi territory: the territory boundary already
+    // handles geographic separation, so we never want to discard a stop as noise
+    // just because it has no close neighbours. Every stop in the partition must
+    // get a cluster so it can reach Phase 3 assignment.
+    const subLabels = dbscan(subPoints, epsKm, 1);
 
     const subIdToGlobal = new Map<string, string>();
     for (const [j, subCid] of subLabels.entries()) {
@@ -697,13 +701,17 @@ Deno.serve(async (req: Request) => {
     const firstPassNoise: Stop[] = [];
     ({ clusters, preassign: voronoiPreassign } = doClustering(constraints.min_cluster_size, firstPassNoise));
 
-    if (clusters.length === 0 && valid.length > 0) {
-      // Dataset too sparse for configured min_cluster_size — retry with min_cluster_size=1
-      // so every address can form its own single-stop cluster.
-      // Business constraints (max_stops, max_miles) are intentionally preserved.
+    // Retry with min_cluster_size=1 if the first pass left too many addresses as
+    // noise. "Too many" = zero clusters formed, OR more than 70% of valid
+    // addresses became noise (common with Voronoi on sparse data where the
+    // internal per-territory DBSCAN still produces noise before the minPts=1
+    // patch propagates everywhere, or with plain DBSCAN on very sparse input).
+    const noiseRatio = valid.length > 0 ? firstPassNoise.length / valid.length : 0;
+    const needsFallback = clusters.length === 0 || noiseRatio > 0.7;
+
+    if (needsFallback && valid.length > 0) {
       ({ clusters, preassign: voronoiPreassign } = doClustering(1, unassigned));
     } else {
-      // First pass succeeded — move its noise points into unassigned
       unassigned.push(...firstPassNoise);
     }
 
