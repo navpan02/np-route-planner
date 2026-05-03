@@ -141,19 +141,36 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
 
   const fileRef = useRef();
 
-  // Load agents from DB on mount
+  // Load agents + their branch zip codes on mount
   useEffect(() => {
-    client
-      .from('agents')
-      .select('id, name, email, start_address, start_lat, start_lng')
-      .eq('active', true)
-      .order('name')
-      .then(({ data }) => {
-        if (data) {
-          setAgents(data);
-          setSelectedAgentIds(new Set(data.map(a => a.id)));
-        }
-      });
+    (async () => {
+      const { data: agentData } = await client
+        .from('agents')
+        .select('id, name, email, start_address, start_lat, start_lng, branch_id')
+        .eq('active', true)
+        .order('name');
+      if (!agentData) return;
+
+      // Fetch unique branches so we can attach zip_codes to each agent
+      const branchIds = [...new Set(agentData.map(a => a.branch_id).filter(Boolean))];
+      let branchZips = {};
+      if (branchIds.length > 0) {
+        const { data: branchData } = await client
+          .from('branches')
+          .select('id, zip_codes')
+          .in('id', branchIds);
+        (branchData ?? []).forEach(b => { branchZips[b.id] = b.zip_codes ?? []; });
+      }
+
+      const enriched = agentData.map(a => ({
+        ...a,
+        allowed_zips: (a.branch_id && branchZips[a.branch_id]?.length > 0)
+          ? branchZips[a.branch_id]
+          : [], // empty = no filter
+      }));
+      setAgents(enriched);
+      setSelectedAgentIds(new Set(enriched.map(a => a.id)));
+    })();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -294,6 +311,7 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
           start_address: a.start_address,
           start_lat: a.start_lat ? Number(a.start_lat) : undefined,
           start_lng: a.start_lng ? Number(a.start_lng) : undefined,
+          allowed_zips: a.allowed_zips ?? [],
         })),
         constraints,
         plan_id: plan.id,
