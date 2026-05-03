@@ -173,7 +173,7 @@ const DOT_STYLE = 'width:10px;height:10px;border-radius:50%;display:inline-block
 const ROW_STYLE = 'display:flex;align-items:center;gap:6px;';
 
 /** Leaflet legend control — bottom-left, updates when colourMode changes */
-function MapLegend({ colourMode, routes }) {
+function MapLegend({ colourMode, routes, allRoutes }) {
   const map = useMap();
 
   useEffect(() => {
@@ -199,15 +199,18 @@ function MapLegend({ colourMode, routes }) {
             </div>`
           ).join('');
       } else {
-        // Agent mode
+        // Colour index from the global (unfiltered) list so the legend stays
+        // consistent when an agent filter is active.
         div.innerHTML =
           `<strong style="display:block;margin-bottom:4px;font-size:12px;">Agent</strong>` +
-          routes.map((r, i) =>
-            `<div style="${ROW_STYLE}">
-              <span style="${DOT_STYLE}background:${AGENT_COLOURS[i % AGENT_COLOURS.length]};"></span>
+          routes.map((r) => {
+            const globalIdx = allRoutes.findIndex(a => a.agent_id === r.agent_id);
+            const colour = AGENT_COLOURS[(globalIdx >= 0 ? globalIdx : 0) % AGENT_COLOURS.length];
+            return `<div style="${ROW_STYLE}">
+              <span style="${DOT_STYLE}background:${colour};"></span>
               <span>${r.agent_name}</span>
-            </div>`
-          ).join('');
+            </div>`;
+          }).join('');
       }
 
       return div;
@@ -215,7 +218,7 @@ function MapLegend({ colourMode, routes }) {
 
     control.addTo(map);
     return () => control.remove();
-  }, [colourMode, routes, map]);
+  }, [colourMode, routes, allRoutes, map]);
 
   return null;
 }
@@ -346,6 +349,9 @@ export default function RouteMap({
   selectedUnassignedId,
   onUnassignedClick,
   onUnassignedDrop,
+  // Full unfiltered routes — used to preserve consistent agent colours when a
+  // filter hides some agents (so agent index doesn't reset to 0).
+  allRoutes: allRoutesProp,
   // draw-mode props
   drawMode = false,
   allAddresses = [],
@@ -355,6 +361,9 @@ export default function RouteMap({
 }) {
   // Accept either result.routes or direct routes prop
   const routes = result?.routes ?? routesProp ?? [];
+  // Colour index is based on position in the full (unfiltered) list so that
+  // filtering doesn't reassign colours (e.g. Carlos stays blue even when Amy is hidden).
+  const allRoutes = allRoutesProp ?? routes;
 
   if (!drawMode && (!routes || routes.length === 0)) {
     return (
@@ -415,14 +424,15 @@ export default function RouteMap({
       })}
       {!drawMode && <>
         <FitBounds routes={routes} />
-        <MapLegend colourMode={colourMode} routes={routes} />
+        <MapLegend colourMode={colourMode} routes={routes} allRoutes={allRoutes} />
       </>}
 
-      {!drawMode && routes.map((route, agentIdx) => {
-        const agentColour = AGENT_COLOURS[agentIdx % AGENT_COLOURS.length];
+      {!drawMode && routes.map((route) => {
+        const globalIdx = allRoutes.findIndex(r => r.agent_id === route.agent_id);
+        const agentColour = AGENT_COLOURS[(globalIdx >= 0 ? globalIdx : 0) % AGENT_COLOURS.length];
 
         return (
-          <span key={route.agent_id ?? agentIdx}>
+          <span key={route.agent_id}>
             {/* Drive route — dashed polyline between cluster centroids (always agent-coloured) */}
             {(route.clusters ?? []).length > 1 && (
               <Polyline
