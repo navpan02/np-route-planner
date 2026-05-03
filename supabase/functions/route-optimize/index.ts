@@ -619,10 +619,13 @@ Deno.serve(async (req: Request) => {
     const unassigned: Stop[] = [];
     const valid: Stop[] = [];
 
+    // Normalise to 5-digit zip so "60601-1234" matches "60601"
+    const excludedZipSet = new Set(constraints.excluded_zips.map(z => z.trim().split('-')[0]));
+
     for (const addr of addresses as InputAddress[]) {
       const geo = geocodeMap.get(addr.unique_id);
 
-      if (constraints.excluded_zips.includes(addr.zip)) {
+      if (excludedZipSet.has(addr.zip.trim().split('-')[0])) {
         excluded.push({
           ...addr,
           lat: geo?.lat ?? 0,
@@ -691,14 +694,38 @@ Deno.serve(async (req: Request) => {
     ({ clusters, preassign: voronoiPreassign } = doClustering(constraints.min_cluster_size, firstPassNoise));
 
     if (clusters.length === 0 && valid.length > 0) {
-      // Dataset too sparse for configured min_cluster_size — retry with 1 so every
-      // address can form its own single-stop cluster. Also lift stop/mile caps.
+      // Dataset too sparse for configured min_cluster_size — retry with min_cluster_size=1
+      // so every address can form its own single-stop cluster.
+      // Business constraints (max_stops, max_miles) are intentionally preserved.
       ({ clusters, preassign: voronoiPreassign } = doClustering(1, unassigned));
-      constraints.max_stops = Math.max(constraints.max_stops, valid.length);
-      constraints.max_miles = 99999;
     } else {
       // First pass succeeded — move its noise points into unassigned
       unassigned.push(...firstPassNoise);
+    }
+
+    // ── Split clusters that exceed max_stops so no cluster is unroutable ────
+
+    const splitClusters: Cluster[] = [];
+    for (const cluster of clusters) {
+      if (cluster.stops.length <= constraints.max_stops) {
+        splitClusters.push(cluster);
+      } else {
+        for (let i = 0; i < cluster.stops.length; i += constraints.max_stops) {
+          const chunk = cluster.stops.slice(i, i + constraints.max_stops);
+          const center = clusterCenter(chunk);
+          const partId = `${cluster.id}_p${Math.floor(i / constraints.max_stops)}`;
+          splitClusters.push({
+            id: partId,
+            center,
+            size: chunk.length,
+            stops: chunk,
+            priority_score: cluster.priority_score,
+          });
+          if (voronoiPreassign !== null && voronoiPreassign.has(cluster.id)) {
+            voronoiPreassign.set(partId, voronoiPreassign.get(cluster.id)!);
+          }
+        }
+      }
     }
 
     // ── Phase 3: Agent assignment ────────────────────────────────────────────
@@ -713,7 +740,7 @@ Deno.serve(async (req: Request) => {
       curLng: agentStops[i].lng,
     }));
 
-    for (const cluster of clusters) {
+    for (const cluster of splitClusters) {
       const walkMi = walkMilesInCluster(cluster.stops);
 
       if (voronoiPreassign !== null) {
@@ -734,8 +761,11 @@ Deno.serve(async (req: Request) => {
         }
       }
 
+      // Pick the nearest agent that still has stop and mile capacity.
+      // Nearest-first produces geographically compact routes; fewest-stops
+      // (the old logic) caused routes to criss-cross across the map.
       let bestAgent = -1;
-      let bestScore = Infinity;
+      let bestDriveMi = Infinity;
 
       for (let a = 0; a < agentRunning.length; a++) {
         const ag = agentRunning[a];
@@ -745,8 +775,8 @@ Deno.serve(async (req: Request) => {
         const newMiles = ag.miles + driveMi + walkMi;
 
         if (newStops <= constraints.max_stops && newMiles <= constraints.max_miles) {
-          if (ag.stops < bestScore) {
-            bestScore = ag.stops;
+          if (driveMi < bestDriveMi) {
+            bestDriveMi = driveMi;
             bestAgent = a;
           }
         }
