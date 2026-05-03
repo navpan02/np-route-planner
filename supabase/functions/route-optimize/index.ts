@@ -24,6 +24,7 @@ interface Agent {
   start_address: string;
   start_lat?: number;
   start_lng?: number;
+  allowed_zips?: string[]; // if non-empty, only addresses with these ZIPs go to this agent
 }
 
 interface Constraints {
@@ -630,26 +631,37 @@ Deno.serve(async (req: Request) => {
     // Normalise to 5-digit zip so "60601-1234" matches "60601"
     const excludedZipSet = new Set(constraints.excluded_zips.map(z => z.trim().split('-')[0]));
 
+    // Union of all ZIP codes permitted by at least one agent's branch.
+    // An empty allowed_zips on an agent means "no restriction" (that agent accepts all ZIPs).
+    // If ALL agents have restrictions, any ZIP not covered by any agent is excluded.
+    const agentAllowedZips: Set<string>[] = (agents as Agent[]).map(ag =>
+      (ag.allowed_zips && ag.allowed_zips.length > 0)
+        ? new Set(ag.allowed_zips.map(z => z.trim().split('-')[0]))
+        : new Set<string>(), // empty set = no restriction for this agent
+    );
+    const someAgentHasRestriction = agentAllowedZips.some(s => s.size > 0);
+    const globalAllowedZips = someAgentHasRestriction
+      ? new Set(agentAllowedZips.flatMap(s => [...s]))
+      : null; // null = all ZIPs allowed (no agent has restrictions)
+
     for (const addr of addresses as InputAddress[]) {
       const geo = geocodeMap.get(addr.unique_id);
+      const normZip = addr.zip.trim().split('-')[0];
 
-      if (excludedZipSet.has(addr.zip.trim().split('-')[0])) {
-        excluded.push({
-          ...addr,
-          lat: geo?.lat ?? 0,
-          lng: geo?.lng ?? 0,
-          priority_score: 0,
-        });
+      if (excludedZipSet.has(normZip)) {
+        excluded.push({ ...addr, lat: geo?.lat ?? 0, lng: geo?.lng ?? 0, priority_score: 0 });
+        continue;
+      }
+
+      // If at least one agent has branch ZIP restrictions and this address ZIP
+      // isn't covered by any agent, exclude it rather than leaving it unroutable.
+      if (globalAllowedZips !== null && !globalAllowedZips.has(normZip)) {
+        excluded.push({ ...addr, lat: geo?.lat ?? 0, lng: geo?.lng ?? 0, priority_score: 0 });
         continue;
       }
 
       if (!geo) {
-        unassigned.push({
-          ...addr,
-          lat: 0,
-          lng: 0,
-          priority_score: 0,
-        });
+        unassigned.push({ ...addr, lat: 0, lng: 0, priority_score: 0 });
         continue;
       }
 
@@ -750,25 +762,39 @@ Deno.serve(async (req: Request) => {
       assignedClusters: [] as Cluster[],
       curLat: agentStops[i].lat,
       curLng: agentStops[i].lng,
+      // Pre-built ZIP set for fast eligibility checks (empty = no restriction)
+      zipSet: (ag.allowed_zips && ag.allowed_zips.length > 0)
+        ? new Set(ag.allowed_zips.map(z => z.trim().split('-')[0]))
+        : null,
     }));
 
     for (const cluster of splitClusters) {
       const walkMi = walkMilesInCluster(cluster.stops);
+      // ZIP codes represented in this cluster (majority vote — use the most common)
+      const clusterZips = cluster.stops.map(s => s.zip.trim().split('-')[0]);
+
+      // Helper: returns true if this agent is allowed to service these ZIPs
+      const agentCanServiceCluster = (ag: typeof agentRunning[0]): boolean => {
+        if (!ag.zipSet) return true; // no restriction
+        return clusterZips.every(z => ag.zipSet!.has(z));
+      };
 
       if (voronoiPreassign !== null) {
         const preferredIdx = voronoiPreassign.get(cluster.id) ?? -1;
         if (preferredIdx >= 0) {
           const ag = agentRunning[preferredIdx];
-          const driveKm = haversineKm(ag.curLat, ag.curLng, cluster.center.lat, cluster.center.lng);
-          const newStops = ag.stops + cluster.stops.length;
-          const newMiles = ag.miles + driveKm * 0.621371 + walkMi;
-          if (newStops <= constraints.max_stops && newMiles <= constraints.max_miles) {
-            ag.miles += driveKm * 0.621371 + walkMi;
-            ag.stops += cluster.stops.length;
-            ag.assignedClusters.push(cluster);
-            ag.curLat = cluster.center.lat;
-            ag.curLng = cluster.center.lng;
-            continue;
+          if (agentCanServiceCluster(ag)) {
+            const driveKm = haversineKm(ag.curLat, ag.curLng, cluster.center.lat, cluster.center.lng);
+            const newStops = ag.stops + cluster.stops.length;
+            const newMiles = ag.miles + driveKm * 0.621371 + walkMi;
+            if (newStops <= constraints.max_stops && newMiles <= constraints.max_miles) {
+              ag.miles += driveKm * 0.621371 + walkMi;
+              ag.stops += cluster.stops.length;
+              ag.assignedClusters.push(cluster);
+              ag.curLat = cluster.center.lat;
+              ag.curLng = cluster.center.lng;
+              continue;
+            }
           }
         }
       }
@@ -782,6 +808,7 @@ Deno.serve(async (req: Request) => {
 
       for (let a = 0; a < agentRunning.length; a++) {
         const ag = agentRunning[a];
+        if (!agentCanServiceCluster(ag)) continue; // ZIP restriction
         const driveKm = haversineKm(ag.curLat, ag.curLng, cluster.center.lat, cluster.center.lng);
         const driveMi = driveKm * 0.621371;
         const newStops = ag.stops + cluster.stops.length;
