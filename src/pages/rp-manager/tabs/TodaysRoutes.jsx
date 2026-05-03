@@ -422,6 +422,7 @@ export default function TodaysRoutes({ session }) {
                   ? (
                     <RouteMap
                       result={filteredResult}
+                      allRoutes={result.routes}
                       colourMode={colourMode}
                       selectedUnassignedId={selectedUnassigned?.unique_id ?? null}
                       onUnassignedClick={(stop) => { setSelectedUnassigned(stop); setShowUnassignedPanel(true); setShowSwapModal(false); }}
