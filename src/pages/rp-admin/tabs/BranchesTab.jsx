@@ -128,12 +128,13 @@ export default function BranchesTab({ session }) {
       </div>
 
       {form && (
-        <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl shadow-xl w-full max-w-lg">
+        <div className="fixed inset-0 bg-black/40 z-50 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+          <div className="bg-white rounded-2xl shadow-xl w-full max-w-lg my-8">
             <div className="p-6 border-b border-gray-200">
               <h3 className="font-bold text-gray-900">{form.id ? 'Edit Branch' : 'Add Branch'}</h3>
             </div>
-            <form onSubmit={save} className="p-6 space-y-4 overflow-y-auto max-h-[calc(90vh-5rem)]">
+            <form onSubmit={save} className="p-6 space-y-4">
               <div>
                 <label className="block text-xs font-semibold text-gray-600 mb-1">Branch Name *</label>
                 <input
@@ -201,6 +202,7 @@ export default function BranchesTab({ session }) {
                 </button>
               </div>
             </form>
+          </div>
           </div>
         </div>
       )}
