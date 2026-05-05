@@ -1,0 +1,1001 @@
+unique_id,address,city,state,zip,address_type,lat,lng
+CHI0451,2730 W Peterson Ave,Skokie,IL,60131,renter,41.848099,-87.796162
+CHI0071,7240 N Western Ave,Norridge,IL,60304,renter,41.650297,-88.015811
+CHI0232,8888 W Chicago Ave,Niles,IL,60651,new_construction,41.753504,-87.93868
+DET0616,2575 Quarton Rd,Berkley,MI,48309,multi_family,42.506126,-83.448506
+DET0681,8545 Telegraph Rd,Pontiac,MI,48154,homeowner,42.275485,-83.307644
+CHI0476,2501 W Montrose Ave,Bellwood,IL,60641,homeowner,41.996902,-87.946746
+CHI0021,6999 N Laramie Ave,Melrose Park,IL,60625,renter,42.033637,-87.785243
+CHI0105,1715 N Laramie Ave,Chicago,IL,60707,renter,41.790696,-88.031066
+DET0534,221 Livernois Ave,Auburn Hills,MI,48201,new_construction,42.521717,-83.403819
+CHI0001,3029 W Chicago Ave,Bellwood,IL,60639,vacant,41.811591,-87.989977
+CHI0085,2693 N California Ave,Melrose Park,IL,60630,homeowner,42.02944,-87.958833
+DET0963,9017 Pontiac Trail,Garden City,MI,48201,homeowner,42.433216,-83.404032
+DET0531,6518 Walton Blvd,Warren,MI,48223,renter,42.564703,-83.118838
+DET0864,1326 Greenfield Rd,Southfield,MI,48313,commercial,42.287461,-83.318025
+CHI0292,9454 N Pulaski Rd,Stone Park,IL,60659,vacant,41.819243,-87.807293
+DET0829,3394 Maple Rd,Hazel Park,MI,48067,homeowner,42.54297,-83.320153
+DET0882,8526 Maple Rd,Madison Heights,MI,48309,homeowner,42.243453,-83.314368
+DET0725,2494 Woodward Ave,Berkley,MI,48313,homeowner,42.415609,-83.36857
+CHI0212,3854 W Bryn Mawr Ave,Bellwood,IL,60657,new_construction,41.950526,-88.003696
+DET0993,8070 Maple Rd,Oak Park,MI,48221,homeowner,42.448622,-83.391579
+DET0831,8022 Inkster Rd,Detroit,MI,48209,commercial,42.59755,-83.354056
+DET0601,134 Lahser Rd,Livonia,MI,48307,renter,42.327433,-83.369497
+DET0557,5908 Woodward Ave,Royal Oak,MI,48069,renter,42.603285,-83.124552
+DET0981,4125 Auburn Rd,Troy,MI,48201,multi_family,42.496633,-83.182955
+CHI0129,6777 W Chicago Ave,Franklin Park,IL,60625,homeowner,41.712681,-87.976657
+CHI0191,6351 W North Ave,Rosemont,IL,60131,commercial,41.732549,-88.023994
+DET0842,920 Telegraph Rd,Auburn Hills,MI,48307,homeowner,42.26084,-83.214926
+CHI0283,454 W Lawrence Ave,Bellwood,IL,60712,homeowner,41.75495,-87.856717
+DET0945,376 Big Beaver Rd,Garden City,MI,48209,homeowner,42.419971,-83.456909
+CHI0478,6301 W Pratt Ave,Franklin Park,IL,60164,homeowner,42.04874,-87.967979
+CHI0434,386 N Elston Ave,River Forest,IL,60618,vacant,41.786852,-87.889769
+CHI0266,9442 N Damen Ave,Harwood Heights,IL,60618,homeowner,41.660862,-87.959358
+CHI0046,1688 W Montrose Ave,Bellwood,IL,60160,renter,42.021918,-87.980672
+DET0839,249 Van Dyke Ave,Berkley,MI,48210,homeowner,42.305212,-83.418136
+CHI0411,2084 N Milwaukee Ave,Berwyn,IL,60651,homeowner,41.759472,-87.851746
+CHI0005,1538 W Irving Park Rd,Franklin Park,IL,60712,homeowner,42.028744,-87.891385
+DET0837,910 Pontiac Trail,Berkley,MI,48221,multi_family,42.456583,-83.333579
+DET0894,3516 Telegraph Rd,Ferndale,MI,48313,renter,42.597325,-83.339497
+CHI0293,3590 N California Ave,Skokie,IL,60301,new_construction,41.679539,-87.807187
+DET0748,8888 Inkster Rd,Redford,MI,48067,homeowner,42.574709,-83.171172
+DET0985,5338 Five Mile Rd,Warren,MI,48210,homeowner,42.499683,-83.105188
+DET0703,5111 Lahser Rd,Detroit,MI,48223,renter,42.550109,-83.216622
+CHI0438,8018 W Devon Ave,Melrose Park,IL,60630,multi_family,41.925048,-87.775951
+DET0899,8984 Inkster Rd,Auburn Hills,MI,48221,multi_family,42.242257,-83.203751
+CHI0265,7630 N Elston Ave,Maywood,IL,60707,renter,41.948174,-87.786803
+DET0825,9610 Grand River Ave,Detroit,MI,48076,renter,42.481604,-83.414315
+DET0915,5895 Walton Blvd,Madison Heights,MI,48073,vacant,42.302309,-83.311179
+CHI0175,368 W Grand Ave,Harwood Heights,IL,60641,commercial,41.954183,-87.962674
+DET0976,5881 Greenfield Rd,Clawson,MI,48154,commercial,42.586991,-83.387239
+DET0630,1968 Mound Rd,Redford,MI,48313,renter,42.266338,-83.48085
+CHI0029,4810 N Pulaski Rd,Chicago,IL,60630,homeowner,41.862412,-87.864059
+DET0654,9926 Livernois Ave,Garden City,MI,48069,homeowner,42.420293,-83.172954
+DET0822,7313 Lahser Rd,Berkley,MI,48237,multi_family,42.49323,-83.359482
+CHI0106,2135 W Armitage Ave,Stone Park,IL,60657,renter,41.775365,-87.978932
+DET0514,5818 Coolidge Hwy,Madison Heights,MI,48071,homeowner,42.416831,-83.397352
+DET0714,6963 Mound Rd,Warren,MI,48209,renter,42.347105,-83.488534
+CHI0500,2657 N Elston Ave,Harwood Heights,IL,60402,new_construction,41.857961,-88.027324
+DET0631,3452 Coolidge Hwy,Birmingham,MI,48221,renter,42.535043,-83.116764
+DET0520,3201 Michigan Ave,Warren,MI,48069,homeowner,42.36998,-83.402462
+CHI0251,9246 W Morse Ave,Berwyn,IL,60707,homeowner,41.896835,-87.900263
+DET0620,5431 Livernois Ave,Livonia,MI,48313,homeowner,42.346203,-83.125921
+DET0710,6987 Walton Blvd,Oak Park,MI,48221,commercial,42.39831,-83.143724
+DET0789,8053 Livernois Ave,Clawson,MI,48210,new_construction,42.552533,-83.349883
+CHI0044,2739 N Harlem Ave,Oak Park,IL,60660,commercial,41.998349,-87.834917
+CHI0072,9262 W Morse Ave,Melrose Park,IL,60660,new_construction,41.87334,-87.937246
+CHI0399,8296 N Damen Ave,Rosemont,IL,60657,homeowner,41.697523,-87.809652
+CHI0006,3438 W Fullerton Ave,Rosemont,IL,60625,renter,41.75776,-88.047714
+CHI0440,5526 N Elston Ave,Rosemont,IL,60647,vacant,41.800554,-87.879257
+DET0799,9073 Coolidge Hwy,Livonia,MI,48221,multi_family,42.29416,-83.327729
+CHI0148,5341 N Laramie Ave,Melrose Park,IL,60712,homeowner,41.885834,-87.847767
+CHI0205,557 N Western Ave,Des Plaines,IL,60402,homeowner,41.946299,-87.770082
+DET0737,3997 Quarton Rd,Redford,MI,48237,multi_family,42.344769,-83.323563
+CHI0069,4113 W Lawrence Ave,Forest Park,IL,60625,homeowner,42.026545,-87.783045
+CHI0426,4028 W Lawrence Ave,Franklin Park,IL,60304,commercial,41.719809,-87.874907
+CHI0285,7312 N Laramie Ave,Cicero,IL,60712,homeowner,41.741535,-87.825508
+DET0559,9141 Van Dyke Ave,Warren,MI,48033,homeowner,42.341853,-83.323272
+CHI0362,3400 N Central Ave,Oak Park,IL,60712,homeowner,42.048934,-87.849997
+DET0812,8666 Quarton Rd,Hazel Park,MI,48301,multi_family,42.525269,-83.185939
+CHI0296,3537 N Cicero Ave,Niles,IL,60660,homeowner,41.666937,-87.921194
+DET0816,9901 Pontiac Trail,Livonia,MI,48223,renter,42.332324,-83.13581
+CHI0276,6967 N Milwaukee Ave,Lincolnwood,IL,60402,homeowner,41.841687,-87.897711
+DET0913,8298 Inkster Rd,Garden City,MI,48073,new_construction,42.314011,-83.463359
+CHI0397,6976 W Pratt Ave,Chicago,IL,60601,renter,42.047586,-87.854375
+DET0623,5562 Lahser Rd,Bloomfield Hills,MI,48313,homeowner,42.389097,-83.118389
+DET0902,9320 Mound Rd,Auburn Hills,MI,48071,homeowner,42.582174,-83.468812
+CHI0403,6611 W Diversey Pkwy,Oak Park,IL,60513,homeowner,41.841571,-87.990743
+CHI0041,6082 N Western Ave,Rosemont,IL,60647,vacant,41.718735,-87.967353
+CHI0409,5846 W Belmont Ave,Harwood Heights,IL,60164,renter,41.944597,-87.966382
+DET0503,6335 Five Mile Rd,Hazel Park,MI,48235,homeowner,42.271395,-83.33187
+CHI0025,4939 W Pratt Ave,Maywood,IL,60641,commercial,41.788153,-87.849882
+DET0786,1853 Eight Mile Rd,Oak Park,MI,48210,homeowner,42.33442,-83.450745
+CHI0353,1135 N Western Ave,Berwyn,IL,60625,renter,41.828587,-87.75537
+CHI0234,887 N Laramie Ave,Harwood Heights,IL,60641,homeowner,41.650707,-88.025389
+DET0554,1545 Van Dyke Ave,Berkley,MI,48067,renter,42.564197,-83.123038
+CHI0290,1093 N Harlem Ave,Cicero,IL,60639,multi_family,41.907642,-87.791102
+CHI0192,7103 W Morse Ave,Stone Park,IL,60630,homeowner,41.899419,-87.987212
+DET0951,2228 Gratiot Ave,Birmingham,MI,48201,renter,42.435522,-83.212438
+CHI0052,403 N California Ave,Stone Park,IL,60712,renter,41.894109,-87.885607
+DET0775,580 Michigan Ave,Detroit,MI,48073,renter,42.561342,-83.459048
+CHI0394,2178 W Morse Ave,Elmwood Park,IL,60160,renter,41.924838,-87.892018
+DET0957,6126 Eight Mile Rd,Southfield,MI,48073,commercial,42.258293,-83.468053
+DET0890,5861 Pontiac Trail,Berkley,MI,48073,homeowner,42.555434,-83.273947
+DET0901,2406 Rochester Rd,Ferndale,MI,48219,commercial,42.314362,-83.147178
+DET0595,6009 Telegraph Rd,Ferndale,MI,48209,homeowner,42.528971,-83.366271
+DET0759,701 Rochester Rd,Auburn Hills,MI,48309,renter,42.223636,-83.105659
+CHI0145,8198 N Milwaukee Ave,Morton Grove,IL,60601,homeowner,41.77064,-87.856627
+CHI0495,3919 W North Ave,Niles,IL,60651,multi_family,41.735013,-87.973977
+DET0755,819 Woodward Ave,Garden City,MI,48313,homeowner,42.538509,-83.147486
+DET0883,5438 Livernois Ave,Southfield,MI,48313,multi_family,42.482624,-83.255858
+DET0865,9121 Quarton Rd,Bloomfield Hills,MI,48201,homeowner,42.506355,-83.392141
+DET0814,9271 Gratiot Ave,Dearborn,MI,48237,renter,42.247187,-83.127379
+DET0796,7852 Six Mile Rd,Auburn Hills,MI,48237,homeowner,42.545962,-83.279607
+DET0848,4717 Orchard Lake Rd,Berkley,MI,48223,renter,42.343882,-83.207747
+CHI0433,1849 N Cicero Ave,Stone Park,IL,60639,renter,41.653495,-87.909679
+DET0611,9021 Grand River Ave,Hazel Park,MI,48313,commercial,42.431977,-83.417099
+CHI0368,7231 W Lawrence Ave,Oak Park,IL,60647,renter,41.875749,-87.822985
+CHI0092,1543 N California Ave,Bellwood,IL,60659,homeowner,41.651917,-87.789191
+DET0962,5225 Woodward Ave,Redford,MI,48309,homeowner,42.571884,-83.121166
+CHI0346,5060 W Foster Ave,Elmwood Park,IL,60660,homeowner,41.734408,-87.970699
+DET0608,7432 Big Beaver Rd,Madison Heights,MI,48301,homeowner,42.313891,-83.275969
+DET0914,6031 Walton Blvd,Oak Park,MI,48237,homeowner,42.452701,-83.377448
+DET0679,7639 Gratiot Ave,Bloomfield Hills,MI,48210,homeowner,42.468992,-83.376695
+CHI0022,5352 W Montrose Ave,Morton Grove,IL,60513,homeowner,41.767212,-87.844558
+DET0794,3904 Coolidge Hwy,Hazel Park,MI,48071,homeowner,42.616534,-83.230622
+CHI0443,6823 W Bryn Mawr Ave,Lincolnwood,IL,60301,homeowner,41.718943,-87.967731
+DET0952,1990 Livernois Ave,Berkley,MI,48219,homeowner,42.582574,-83.259782
+CHI0388,3257 N Cicero Ave,Rosemont,IL,60630,commercial,42.033609,-87.865931
+DET0972,9564 Big Beaver Rd,Bloomfield Hills,MI,48033,multi_family,42.329193,-83.130506
+DET0781,748 Livernois Ave,Troy,MI,48221,homeowner,42.350698,-83.491192
+DET0519,198 Woodward Ave,Garden City,MI,48219,homeowner,42.23055,-83.32056
+CHI0497,4886 N Laramie Ave,Melrose Park,IL,60641,homeowner,41.728473,-87.811756
+CHI0395,8952 W Foster Ave,Harwood Heights,IL,60601,homeowner,41.675584,-88.040706
+CHI0220,983 W Grand Ave,Berwyn,IL,60513,homeowner,41.940421,-87.976567
+DET0661,4579 Livernois Ave,Hazel Park,MI,48223,homeowner,42.43775,-83.288162
+DET0701,9895 Gratiot Ave,Bloomfield Hills,MI,48307,homeowner,42.568171,-83.441185
+DET0918,7123 Eight Mile Rd,Southfield,MI,48209,homeowner,42.27659,-83.143793
+CHI0080,9325 N Western Ave,Forest Park,IL,60131,homeowner,41.684048,-88.044049
+DET0964,9020 Eight Mile Rd,Dearborn,MI,48067,renter,42.616718,-83.1944
+CHI0387,7252 W Irving Park Rd,Rosemont,IL,60647,homeowner,41.886604,-87.751862
+CHI0470,2544 N Ashland Ave,Bellwood,IL,60630,homeowner,41.794561,-87.881823
+CHI0463,1368 W Diversey Pkwy,Des Plaines,IL,60618,homeowner,41.679982,-87.89362
+CHI0026,3888 W Devon Ave,Norridge,IL,60712,homeowner,41.754393,-87.924986
+CHI0360,2477 W Bryn Mawr Ave,Cicero,IL,60707,homeowner,41.913487,-87.822577
+CHI0233,3930 W Morse Ave,Berwyn,IL,60660,homeowner,41.986347,-87.967829
+DET0726,7138 Six Mile Rd,Birmingham,MI,48223,vacant,42.324423,-83.331532
+DET0583,5663 Five Mile Rd,Warren,MI,48309,homeowner,42.439313,-83.230945
+DET0542,1773 Quarton Rd,Bloomfield Hills,MI,48071,homeowner,42.299328,-83.219409
+CHI0482,6147 W Morse Ave,Des Plaines,IL,60304,homeowner,41.752495,-87.863883
+DET0716,1014 Eight Mile Rd,Garden City,MI,48237,multi_family,42.30313,-83.459964
+CHI0111,7533 W Montrose Ave,Cicero,IL,60707,multi_family,41.852987,-88.038647
+CHI0077,7334 W Devon Ave,Franklin Park,IL,60402,homeowner,41.955827,-87.77937
+CHI0352,7516 W Pratt Ave,Maywood,IL,60131,multi_family,41.983685,-87.801675
+CHI0480,9070 N Harlem Ave,Lincolnwood,IL,60707,homeowner,41.946896,-88.034109
+DET0610,3969 Inkster Rd,Detroit,MI,48067,renter,42.529526,-83.183231
+DET0978,1556 Coolidge Hwy,Warren,MI,48223,homeowner,42.572083,-83.194703
+CHI0023,4865 W Devon Ave,Elmwood Park,IL,60641,homeowner,42.021932,-87.972949
+DET0855,4019 Telegraph Rd,Detroit,MI,48228,commercial,42.425781,-83.384777
+CHI0374,1208 N Central Ave,Morton Grove,IL,60131,homeowner,41.903181,-87.866608
+CHI0014,3010 W Devon Ave,Forest Park,IL,60647,multi_family,41.697486,-87.961208
+DET0546,3097 Auburn Rd,Birmingham,MI,48235,commercial,42.534889,-83.312518
+CHI0456,8063 N Milwaukee Ave,Forest Park,IL,60402,renter,41.82862,-87.786605
+DET0815,139 Grand River Ave,Livonia,MI,48154,renter,42.262937,-83.275984
+DET0689,4328 Six Mile Rd,Birmingham,MI,48237,multi_family,42.392909,-83.372081
+CHI0130,7812 N Elston Ave,Maywood,IL,60657,renter,41.673814,-88.033049
+CHI0081,9706 W Addison St,Chicago,IL,60601,homeowner,41.819347,-87.851097
+CHI0302,4497 W Armitage Ave,Melrose Park,IL,60301,homeowner,41.985687,-87.781721
+DET0705,9831 Woodward Ave,Troy,MI,48210,homeowner,42.337546,-83.144685
+CHI0226,9762 N Lincoln Ave,Harwood Heights,IL,60301,homeowner,41.829041,-87.984909
+DET0912,4022 Pontiac Trail,Hazel Park,MI,48067,multi_family,42.489981,-83.305734
+CHI0477,4543 W Grand Ave,River Forest,IL,60164,renter,41.939494,-88.008992
+CHI0268,264 N Laramie Ave,Oak Park,IL,60639,renter,41.775722,-87.870843
+DET0628,7670 Maple Rd,Pontiac,MI,48209,renter,42.34891,-83.280299
+CHI0467,1924 N Kedzie Ave,Elmwood Park,IL,60160,homeowner,41.960904,-87.814575
+CHI0050,1284 W Belmont Ave,Norridge,IL,60641,multi_family,41.766041,-87.902267
+CHI0098,8585 W Pratt Ave,Rosemont,IL,60659,homeowner,41.78902,-87.997007
+DET0821,8869 Lahser Rd,Garden City,MI,48313,multi_family,42.473401,-83.322892
+CHI0364,4874 N Elston Ave,Morton Grove,IL,60630,commercial,41.672155,-87.886046
+DET0887,4942 Coolidge Hwy,Royal Oak,MI,48073,homeowner,42.303171,-83.412055
+CHI0377,3730 N Western Ave,Melrose Park,IL,60402,renter,41.898123,-87.945495
+DET0974,5543 Grand River Ave,Warren,MI,48228,homeowner,42.418889,-83.184844
+DET0851,7850 Woodward Ave,Clawson,MI,48073,homeowner,42.359851,-83.448368
+DET0548,1907 Mound Rd,Madison Heights,MI,48219,renter,42.217248,-83.409662
+DET0898,8997 Greenfield Rd,Ferndale,MI,48209,commercial,42.440627,-83.326639
+DET0676,2740 Pontiac Trail,Ferndale,MI,48071,renter,42.393038,-83.391937
+DET0930,9002 Telegraph Rd,Oak Park,MI,48219,multi_family,42.505644,-83.406279
+CHI0018,6211 W Foster Ave,Harwood Heights,IL,60301,homeowner,41.687066,-87.786129
+DET0720,5362 Gratiot Ave,Detroit,MI,48223,homeowner,42.338802,-83.24265
+CHI0494,7590 N Milwaukee Ave,Harwood Heights,IL,60657,homeowner,41.826157,-87.928495
+CHI0027,121 N Ashland Ave,Stone Park,IL,60641,multi_family,41.694933,-87.890475
+DET0551,9198 Inkster Rd,Birmingham,MI,48073,commercial,42.38272,-83.25685
+DET0741,2169 Orchard Lake Rd,Troy,MI,48201,homeowner,42.419426,-83.155713
+CHI0273,2288 W Grand Ave,Niles,IL,60402,renter,41.807862,-87.993329
+CHI0183,8506 W Pratt Ave,Des Plaines,IL,60164,homeowner,41.686054,-87.933262
+CHI0195,9750 W Armitage Ave,Franklin Park,IL,60641,renter,41.782091,-87.920477
+CHI0157,3259 N Harlem Ave,Morton Grove,IL,60712,renter,41.720388,-87.858872
+CHI0404,3930 W Peterson Ave,Harwood Heights,IL,60659,homeowner,41.667423,-87.901466
+CHI0070,5728 W Armitage Ave,Melrose Park,IL,60625,commercial,41.66162,-87.986437
+CHI0194,4889 W Irving Park Rd,Maywood,IL,60513,new_construction,41.677618,-87.975906
+CHI0087,8318 W Grand Ave,Skokie,IL,60657,renter,41.889094,-87.984748
+CHI0485,4441 N Western Ave,Melrose Park,IL,60301,homeowner,41.763074,-87.801138
+CHI0189,3848 W Addison St,Morton Grove,IL,60618,homeowner,41.763776,-87.881171
+CHI0090,9486 N Milwaukee Ave,Franklin Park,IL,60712,multi_family,41.872314,-87.815593
+CHI0446,7490 N Kedzie Ave,Stone Park,IL,60160,renter,41.663593,-87.76819
+DET0863,4053 Livernois Ave,Hazel Park,MI,48307,new_construction,42.243162,-83.320689
+DET0717,7485 Quarton Rd,Madison Heights,MI,48237,multi_family,42.397333,-83.212916
+CHI0198,7092 W Lawrence Ave,Oak Park,IL,60647,homeowner,41.92119,-88.043558
+DET0613,1859 Mound Rd,Garden City,MI,48033,new_construction,42.535566,-83.387186
+CHI0472,2901 W Foster Ave,Niles,IL,60641,renter,41.674779,-87.837025
+CHI0091,1548 W Devon Ave,Skokie,IL,60630,homeowner,41.967373,-88.046837
+DET0637,3606 Rochester Rd,Berkley,MI,48033,homeowner,42.438366,-83.288126
+CHI0315,3321 W Fullerton Ave,Niles,IL,60131,new_construction,41.977583,-87.882712
+DET0718,4958 Five Mile Rd,Clawson,MI,48071,homeowner,42.612395,-83.313147
+CHI0126,2612 W Montrose Ave,Skokie,IL,60647,renter,41.809577,-87.849569
+CHI0142,4888 N Milwaukee Ave,Skokie,IL,60630,homeowner,42.015782,-87.948705
+DET0827,8216 Van Dyke Ave,Garden City,MI,48307,homeowner,42.246676,-83.311348
+DET0761,5078 Inkster Rd,Pontiac,MI,48076,homeowner,42.600769,-83.498869
+DET0967,835 Gratiot Ave,Warren,MI,48209,multi_family,42.610316,-83.220148
+CHI0326,8883 N Elston Ave,Rosemont,IL,60301,multi_family,42.000908,-87.763011
+CHI0260,6633 W Addison St,Cicero,IL,60660,homeowner,41.669454,-87.997544
+CHI0462,8435 N Pulaski Rd,Bellwood,IL,60630,homeowner,41.918077,-87.956348
+DET0836,9429 Greenfield Rd,Livonia,MI,48313,renter,42.334381,-83.291759
+DET0849,1927 Greenfield Rd,Royal Oak,MI,48076,homeowner,42.269854,-83.234832
+DET0622,3343 Inkster Rd,Detroit,MI,48067,homeowner,42.600291,-83.359998
+DET0933,8571 Pontiac Trail,Warren,MI,48209,homeowner,42.447172,-83.262664
+DET0713,3883 Gratiot Ave,Hazel Park,MI,48071,homeowner,42.260536,-83.216394
+DET0938,8144 Michigan Ave,Warren,MI,48313,multi_family,42.237048,-83.203742
+DET0677,1955 Five Mile Rd,Hazel Park,MI,48154,homeowner,42.267923,-83.354358
+CHI0250,1516 W Addison St,Harwood Heights,IL,60630,renter,41.803527,-87.784499
+DET0567,981 Eight Mile Rd,Pontiac,MI,48313,homeowner,42.4145,-83.408296
+DET0760,889 Pontiac Trail,Birmingham,MI,48301,homeowner,42.300066,-83.312649
+CHI0474,8247 N Cicero Ave,Lincolnwood,IL,60625,homeowner,41.945213,-87.813579
+DET0998,5612 Rochester Rd,Livonia,MI,48209,renter,42.41661,-83.188716
+DET0777,290 Telegraph Rd,Warren,MI,48201,renter,42.403088,-83.486424
+DET0776,6737 Five Mile Rd,Southfield,MI,48237,renter,42.458539,-83.22888
+DET0569,1511 Six Mile Rd,Royal Oak,MI,48313,renter,42.346939,-83.122919
+CHI0042,8864 N Western Ave,Berwyn,IL,60639,homeowner,41.8736,-87.839454
+CHI0418,5722 N Western Ave,Lincolnwood,IL,60625,commercial,41.889992,-87.950476
+DET0860,5213 Gratiot Ave,Livonia,MI,48221,new_construction,42.329329,-83.438277
+CHI0262,376 W Belmont Ave,Franklin Park,IL,60639,renter,41.69832,-87.973342
+DET0509,3714 Quarton Rd,Garden City,MI,48073,renter,42.224943,-83.490971
+DET0923,9657 Woodward Ave,Troy,MI,48209,homeowner,42.319954,-83.263488
+DET0862,5658 Michigan Ave,Madison Heights,MI,48071,homeowner,42.215043,-83.389822
+DET0621,3495 Woodward Ave,Hazel Park,MI,48076,homeowner,42.423627,-83.118728
+DET0545,2723 Greenfield Rd,Hazel Park,MI,48313,commercial,42.566709,-83.343892
+DET0879,6764 Greenfield Rd,Clawson,MI,48219,multi_family,42.227777,-83.229958
+CHI0447,4080 W Chicago Ave,Oak Park,IL,60160,renter,41.924863,-88.028852
+DET0745,1991 Rochester Rd,Detroit,MI,48307,renter,42.23914,-83.41698
+DET0767,8290 Lahser Rd,Ferndale,MI,48307,commercial,42.420787,-83.251726
+DET0922,4634 Six Mile Rd,Bloomfield Hills,MI,48235,multi_family,42.415335,-83.43711
+CHI0201,5951 N Damen Ave,Cicero,IL,60160,vacant,41.803168,-87.798223
+DET0840,4725 Lahser Rd,Ferndale,MI,48228,homeowner,42.576169,-83.318589
+DET0523,4101 Telegraph Rd,Oak Park,MI,48069,homeowner,42.331231,-83.13873
+CHI0007,7680 W Belmont Ave,Norridge,IL,60639,homeowner,41.857462,-87.990576
+CHI0370,4584 N Western Ave,Niles,IL,60641,homeowner,41.737668,-87.854171
+DET0906,6582 Grand River Ave,Birmingham,MI,48307,homeowner,42.379123,-83.451605
+CHI0428,5702 W Armitage Ave,Harwood Heights,IL,60160,homeowner,41.69323,-87.762799
+CHI0094,3671 W Grand Ave,Harwood Heights,IL,60660,renter,41.896567,-87.952909
+CHI0325,4305 W Pratt Ave,Norridge,IL,60639,homeowner,42.002999,-87.763176
+CHI0237,4373 W Fullerton Ave,Morton Grove,IL,60164,multi_family,41.803182,-87.818141
+DET0733,9669 Seven Mile Rd,Oak Park,MI,48223,renter,42.341563,-83.322705
+CHI0058,2264 W Irving Park Rd,Elmwood Park,IL,60625,renter,41.885291,-87.947605
+DET0983,4712 Five Mile Rd,Auburn Hills,MI,48228,commercial,42.309811,-83.403585
+CHI0002,8796 W Peterson Ave,Rosemont,IL,60625,multi_family,41.684631,-87.831291
+DET0850,9409 Rochester Rd,Sterling Heights,MI,48073,homeowner,42.332667,-83.107763
+CHI0439,9729 W Morse Ave,River Forest,IL,60160,new_construction,41.859996,-87.871749
+CHI0054,2784 W Bryn Mawr Ave,Des Plaines,IL,60630,renter,41.734865,-87.855658
+CHI0357,2302 N Pulaski Rd,Chicago,IL,60513,new_construction,41.882528,-87.886574
+CHI0385,5466 N Central Ave,Harwood Heights,IL,60304,homeowner,41.844389,-87.993546
+DET0586,4734 Quarton Rd,Troy,MI,48228,multi_family,42.600021,-83.175326
+CHI0214,5187 W Diversey Pkwy,Lincolnwood,IL,60304,commercial,41.802933,-87.880076
+DET0869,3776 Coolidge Hwy,Birmingham,MI,48228,homeowner,42.378236,-83.270743
+CHI0372,9500 N Milwaukee Ave,Harwood Heights,IL,60618,multi_family,41.678897,-87.757525
+CHI0240,4362 W North Ave,Stone Park,IL,60630,homeowner,41.991513,-87.942567
+CHI0258,2144 W Devon Ave,Skokie,IL,60647,homeowner,41.903049,-87.918094
+DET0807,2896 Seven Mile Rd,Livonia,MI,48235,homeowner,42.508534,-83.427621
+DET0884,8839 Grand River Ave,Berkley,MI,48069,renter,42.407451,-83.158705
+CHI0132,4638 W Foster Ave,River Forest,IL,60164,homeowner,41.998882,-87.919633
+DET0791,4317 Orchard Lake Rd,Hazel Park,MI,48237,renter,42.314279,-83.467036
+CHI0419,2655 W Armitage Ave,Harwood Heights,IL,60657,homeowner,41.693812,-87.753357
+CHI0271,329 N Kedzie Ave,Rosemont,IL,60639,renter,41.843872,-87.833108
+DET0619,4231 Livernois Ave,Sterling Heights,MI,48033,commercial,42.34385,-83.153018
+CHI0287,5705 W Chicago Ave,Niles,IL,60651,renter,41.659105,-87.915897
+CHI0137,2094 N Laramie Ave,Rosemont,IL,60131,multi_family,41.72813,-87.786644
+DET0674,9124 Six Mile Rd,Madison Heights,MI,48201,commercial,42.429548,-83.13228
+DET0543,6005 Maple Rd,Royal Oak,MI,48235,homeowner,42.476908,-83.185155
+CHI0295,6466 N Milwaukee Ave,Stone Park,IL,60707,new_construction,42.043682,-87.934371
+DET0924,4161 Telegraph Rd,Berkley,MI,48201,homeowner,42.249699,-83.152129
+CHI0203,8893 N Harlem Ave,Maywood,IL,60657,renter,41.703661,-87.781217
+DET0665,3716 Five Mile Rd,Pontiac,MI,48033,homeowner,42.348455,-83.193375
+CHI0146,1870 N Laramie Ave,Chicago,IL,60131,new_construction,41.864377,-88.022946
+DET0937,6004 Van Dyke Ave,Detroit,MI,48307,vacant,42.611015,-83.39286
+DET0792,8283 Five Mile Rd,Garden City,MI,48209,renter,42.389322,-83.339787
+DET0979,4044 Livernois Ave,Garden City,MI,48209,multi_family,42.283295,-83.140427
+DET0793,543 Mound Rd,Bloomfield Hills,MI,48221,homeowner,42.605696,-83.361767
+CHI0417,9916 N Pulaski Rd,Skokie,IL,60131,homeowner,41.917943,-87.879668
+CHI0280,6081 N Ashland Ave,Niles,IL,60651,commercial,41.788555,-87.857299
+CHI0230,3075 W Chicago Ave,Niles,IL,60641,homeowner,41.785717,-87.796461
+DET0709,2076 Rochester Rd,Ferndale,MI,48067,new_construction,42.289847,-83.242257
+CHI0420,1869 N Damen Ave,Berwyn,IL,60660,vacant,42.02767,-87.787751
+CHI0122,391 W North Ave,Lincolnwood,IL,60651,homeowner,41.719158,-87.8477
+CHI0351,575 W Lawrence Ave,Bellwood,IL,60618,homeowner,41.847636,-87.99062
+CHI0498,2552 W Foster Ave,Chicago,IL,60641,multi_family,41.721342,-87.80317
+CHI0012,2170 W Fullerton Ave,Morton Grove,IL,60618,homeowner,41.868188,-87.80246
+DET0946,4550 Walton Blvd,Hazel Park,MI,48221,homeowner,42.413752,-83.483607
+DET0811,9449 Eight Mile Rd,Redford,MI,48201,homeowner,42.5384,-83.191684
+DET0942,6231 Five Mile Rd,Royal Oak,MI,48033,renter,42.318053,-83.141785
+CHI0342,8009 N Central Ave,Franklin Park,IL,60618,homeowner,42.005155,-87.818652
+DET0838,2736 Auburn Rd,Pontiac,MI,48067,multi_family,42.242161,-83.141063
+DET0541,7735 Eight Mile Rd,Ferndale,MI,48071,commercial,42.286182,-83.299099
+DET0977,5232 Coolidge Hwy,Troy,MI,48209,multi_family,42.261155,-83.231838
+CHI0100,9243 W Grand Ave,Norridge,IL,60641,multi_family,41.863574,-87.763489
+DET0615,7468 Seven Mile Rd,Ferndale,MI,48309,multi_family,42.594261,-83.20004
+CHI0034,9482 W Pratt Ave,Harwood Heights,IL,60641,renter,41.750067,-87.967927
+DET0618,9580 Livernois Ave,Auburn Hills,MI,48073,homeowner,42.321316,-83.147475
+CHI0365,1668 N Damen Ave,Cicero,IL,60402,renter,41.743062,-87.832799
+DET0536,8862 Pontiac Trail,Sterling Heights,MI,48313,homeowner,42.540906,-83.316251
+DET0739,3463 Lahser Rd,Madison Heights,MI,48235,homeowner,42.586014,-83.256048
+CHI0127,5509 N California Ave,Niles,IL,60513,renter,41.697086,-87.843706
+CHI0298,7991 N Western Ave,Franklin Park,IL,60131,commercial,41.991159,-87.92581
+DET0528,9464 Gratiot Ave,Livonia,MI,48201,multi_family,42.307786,-83.165605
+DET0648,6848 Six Mile Rd,Auburn Hills,MI,48307,homeowner,42.514854,-83.284193
+CHI0286,1937 N Western Ave,River Forest,IL,60660,renter,41.87598,-87.943102
+CHI0247,8419 N Pulaski Rd,Norridge,IL,60639,homeowner,41.871735,-87.791655
+DET0992,2090 Michigan Ave,Bloomfield Hills,MI,48237,renter,42.591712,-83.447904
+CHI0056,9598 N California Ave,Niles,IL,60639,homeowner,42.045681,-87.97362
+CHI0112,5920 N California Ave,Rosemont,IL,60618,homeowner,42.032782,-87.76046
+DET0932,6990 Auburn Rd,Detroit,MI,48033,commercial,42.447121,-83.421598
+DET0768,7609 Livernois Ave,Hazel Park,MI,48307,commercial,42.608139,-83.496983
+CHI0363,2405 W Bryn Mawr Ave,River Forest,IL,60601,renter,41.724274,-88.028452
+DET0563,4082 Inkster Rd,Troy,MI,48313,homeowner,42.617788,-83.121236
+CHI0053,3832 W North Ave,Lincolnwood,IL,60131,homeowner,41.854909,-87.779627
+CHI0049,284 W Morse Ave,Stone Park,IL,60513,homeowner,41.770255,-88.002352
+CHI0499,6974 W Montrose Ave,Stone Park,IL,60657,homeowner,41.856588,-87.760753
+CHI0359,5963 W Fullerton Ave,Morton Grove,IL,60630,vacant,41.875587,-87.951302
+DET0925,4033 Telegraph Rd,Bloomfield Hills,MI,48307,renter,42.437277,-83.115862
+DET0790,6980 Inkster Rd,Bloomfield Hills,MI,48201,renter,42.324873,-83.184786
+DET0787,8556 Auburn Rd,Auburn Hills,MI,48154,homeowner,42.223128,-83.389937
+DET0553,8653 Lahser Rd,Southfield,MI,48301,renter,42.257013,-83.101612
+CHI0430,2477 N Kedzie Ave,Lincolnwood,IL,60659,commercial,41.956584,-87.761648
+CHI0281,2294 W Montrose Ave,Chicago,IL,60659,renter,41.710352,-87.77825
+CHI0067,4366 N Pulaski Rd,Skokie,IL,60618,homeowner,41.706917,-87.958482
+CHI0165,5907 W North Ave,Stone Park,IL,60659,multi_family,41.835248,-87.772995
+CHI0099,2603 N Kedzie Ave,Niles,IL,60618,homeowner,41.656566,-87.871953
+DET0846,6832 Rochester Rd,Auburn Hills,MI,48307,renter,42.473745,-83.495877
+CHI0017,6643 N Elston Ave,Niles,IL,60707,multi_family,41.736529,-87.93027
+CHI0452,4975 W Foster Ave,Morton Grove,IL,60651,new_construction,41.67124,-87.787696
+CHI0133,2325 W Irving Park Rd,Skokie,IL,60301,homeowner,41.842486,-87.937686
+DET0905,9381 Rochester Rd,Detroit,MI,48069,homeowner,42.383996,-83.208663
+CHI0303,5007 N Pulaski Rd,Harwood Heights,IL,60513,homeowner,41.829217,-87.866741
+CHI0349,2560 W Chicago Ave,Morton Grove,IL,60659,new_construction,41.863956,-88.017798
+CHI0047,1413 W Morse Ave,River Forest,IL,60641,vacant,41.943201,-87.869263
+CHI0415,3406 N Lincoln Ave,Rosemont,IL,60513,multi_family,41.890238,-88.016432
+DET0582,5270 Walton Blvd,Southfield,MI,48219,renter,42.359178,-83.143944
+CHI0333,6832 W Montrose Ave,Harwood Heights,IL,60660,homeowner,41.724776,-88.012633
+CHI0367,4971 N Damen Ave,River Forest,IL,60131,homeowner,42.030677,-87.847503
+DET0931,9709 Eight Mile Rd,Garden City,MI,48076,homeowner,42.550794,-83.174653
+CHI0036,352 W Diversey Pkwy,Franklin Park,IL,60304,homeowner,41.745829,-87.912038
+CHI0224,8984 W Addison St,Melrose Park,IL,60304,commercial,41.724788,-87.857287
+DET0751,1417 Auburn Rd,Livonia,MI,48154,multi_family,42.219152,-83.416691
+DET0693,3166 Pontiac Trail,Berkley,MI,48309,renter,42.303419,-83.157183
+DET0911,2863 Greenfield Rd,Pontiac,MI,48154,renter,42.552089,-83.207082
+DET0736,8982 Mound Rd,Oak Park,MI,48235,homeowner,42.362831,-83.23257
+CHI0335,8221 W Addison St,Norridge,IL,60641,homeowner,41.657468,-87.996761
+CHI0277,1969 N Lincoln Ave,River Forest,IL,60618,renter,41.733316,-87.799721
+CHI0197,8535 W Belmont Ave,Maywood,IL,60304,multi_family,41.927746,-87.944805
+DET0685,2451 Telegraph Rd,Auburn Hills,MI,48201,commercial,42.585583,-83.36425
+CHI0153,3029 W North Ave,Des Plaines,IL,60601,commercial,41.726267,-87.969429
+DET0990,2987 Six Mile Rd,Ferndale,MI,48221,multi_family,42.549718,-83.387724
+CHI0229,9623 W Belmont Ave,Cicero,IL,60660,multi_family,41.939908,-87.779612
+DET0538,6571 Five Mile Rd,Auburn Hills,MI,48067,homeowner,42.610114,-83.145425
+CHI0156,1951 W Bryn Mawr Ave,Elmwood Park,IL,60625,multi_family,41.749353,-87.920521
+DET0866,8930 Lahser Rd,Royal Oak,MI,48073,homeowner,42.541836,-83.437491
+DET0941,9526 Six Mile Rd,Berkley,MI,48228,renter,42.303362,-83.400204
+DET0532,5015 Coolidge Hwy,Sterling Heights,MI,48209,commercial,42.489721,-83.231565
+DET0886,8164 Greenfield Rd,Pontiac,MI,48073,multi_family,42.253079,-83.194494
+DET0948,7190 Livernois Ave,Southfield,MI,48201,renter,42.209035,-83.465092
+DET0958,6610 Eight Mile Rd,Pontiac,MI,48209,homeowner,42.271213,-83.220586
+DET0592,2021 Mound Rd,Hazel Park,MI,48223,multi_family,42.230829,-83.424043
+CHI0343,1823 N Laramie Ave,River Forest,IL,60712,homeowner,41.74949,-87.929306
+DET0606,7602 Coolidge Hwy,Southfield,MI,48076,multi_family,42.48481,-83.340127
+CHI0068,1383 W Bryn Mawr Ave,Harwood Heights,IL,60601,renter,41.79198,-88.007659
+CHI0423,3363 N Ashland Ave,Lincolnwood,IL,60164,multi_family,41.894818,-87.827667
+CHI0408,5557 N Lincoln Ave,River Forest,IL,60625,vacant,41.848506,-87.930313
+CHI0236,4292 N Elston Ave,Maywood,IL,60301,homeowner,42.004643,-87.92768
+CHI0016,4813 N Milwaukee Ave,Des Plaines,IL,60618,renter,41.724381,-88.028283
+CHI0337,8202 N Western Ave,Forest Park,IL,60301,multi_family,41.722827,-87.769859
+CHI0453,3682 W Devon Ave,Oak Park,IL,60618,homeowner,41.864062,-87.834511
+CHI0288,8870 N Western Ave,Forest Park,IL,60625,homeowner,41.817678,-88.016694
+CHI0390,5565 W Diversey Pkwy,Lincolnwood,IL,60625,multi_family,41.864736,-87.791433
+CHI0208,4511 W Addison St,Morton Grove,IL,60160,multi_family,41.800653,-88.039055
+DET0724,1565 Lahser Rd,Detroit,MI,48076,homeowner,42.332653,-83.103196
+CHI0128,1154 N Western Ave,Bellwood,IL,60651,renter,41.781399,-87.98534
+CHI0079,4683 N Central Ave,Morton Grove,IL,60660,multi_family,41.733365,-87.872691
+DET0841,7243 Auburn Rd,Ferndale,MI,48223,renter,42.39145,-83.337889
+DET0704,8798 Michigan Ave,Hazel Park,MI,48033,commercial,42.35078,-83.246755
+DET0774,9661 Mound Rd,Troy,MI,48313,renter,42.573636,-83.220124
+DET0742,1865 Mound Rd,Oak Park,MI,48073,commercial,42.418956,-83.160486
+CHI0152,6597 W North Ave,Chicago,IL,60660,renter,41.871325,-87.8091
+DET0871,7856 Lahser Rd,Garden City,MI,48071,homeowner,42.501476,-83.108833
+DET0847,7438 Livernois Ave,Southfield,MI,48209,vacant,42.459625,-83.397206
+CHI0202,3342 W Devon Ave,Rosemont,IL,60712,new_construction,41.878987,-87.906225
+CHI0076,2098 W Foster Ave,Chicago,IL,60659,renter,41.75477,-87.816985
+DET0926,3032 Telegraph Rd,Oak Park,MI,48209,multi_family,42.260331,-83.439323
+DET0875,8167 Maple Rd,Pontiac,MI,48228,homeowner,42.36011,-83.223623
+DET0949,7740 Michigan Ave,Pontiac,MI,48073,multi_family,42.457569,-83.217551
+DET0880,8906 Orchard Lake Rd,Dearborn,MI,48228,homeowner,42.327328,-83.499607
+DET0873,8054 Big Beaver Rd,Pontiac,MI,48210,multi_family,42.590593,-83.3468
+CHI0010,192 N Elston Ave,Franklin Park,IL,60639,multi_family,41.902806,-88.007127
+CHI0407,8661 N Harlem Ave,Stone Park,IL,60601,renter,41.74893,-87.809604
+CHI0312,8066 W Chicago Ave,Bellwood,IL,60707,homeowner,41.979342,-87.911177
+DET0649,3016 Woodward Ave,Detroit,MI,48223,multi_family,42.565902,-83.192143
+DET0988,6194 Seven Mile Rd,Oak Park,MI,48309,homeowner,42.362684,-83.324012
+CHI0182,2188 W Armitage Ave,Rosemont,IL,60657,multi_family,41.958276,-87.936335
+DET0900,3131 Grand River Ave,Ferndale,MI,48067,renter,42.28332,-83.193517
+DET1000,1005 Six Mile Rd,Clawson,MI,48071,homeowner,42.549322,-83.284379
+DET0657,8632 Six Mile Rd,Troy,MI,48235,homeowner,42.288644,-83.162331
+CHI0289,5400 N Damen Ave,Franklin Park,IL,60164,vacant,41.943683,-87.870338
+CHI0008,7337 W Armitage Ave,River Forest,IL,60402,commercial,42.03097,-87.835457
+DET0785,5264 Six Mile Rd,Birmingham,MI,48235,commercial,42.477979,-83.248686
+CHI0336,3081 W Diversey Pkwy,Harwood Heights,IL,60712,homeowner,41.849402,-87.995153
+DET0728,8652 Livernois Ave,Warren,MI,48237,renter,42.454139,-83.30997
+CHI0051,5456 W Montrose Ave,Oak Park,IL,60712,homeowner,41.923422,-87.796026
+DET0950,5734 Gratiot Ave,Pontiac,MI,48069,renter,42.346722,-83.48813
+CHI0425,3509 W Fullerton Ave,Oak Park,IL,60712,multi_family,41.990713,-88.034661
+CHI0055,3410 N Kedzie Ave,River Forest,IL,60659,homeowner,41.651728,-87.766919
+CHI0331,3561 N Damen Ave,Forest Park,IL,60131,homeowner,41.659014,-87.854486
+DET0588,7172 Michigan Ave,Clawson,MI,48067,commercial,42.381661,-83.186322
+CHI0095,4197 W Irving Park Rd,Rosemont,IL,60164,renter,41.667128,-87.855384
+CHI0119,3391 W Peterson Ave,Niles,IL,60657,homeowner,41.97938,-87.889119
+CHI0060,2943 N Kedzie Ave,Morton Grove,IL,60651,homeowner,41.894554,-87.778131
+CHI0314,7822 N Ashland Ave,Chicago,IL,60630,multi_family,41.997432,-87.905075
+DET0818,3506 Six Mile Rd,Warren,MI,48154,homeowner,42.47878,-83.408863
+CHI0113,355 N Central Ave,Maywood,IL,60402,vacant,41.656009,-87.985169
+CHI0114,151 N Pulaski Rd,Oak Park,IL,60164,homeowner,41.833264,-87.859352
+CHI0301,1290 W Fullerton Ave,Melrose Park,IL,60625,homeowner,41.81147,-87.810382
+CHI0489,1224 N Cicero Ave,Harwood Heights,IL,60639,homeowner,42.027996,-88.008548
+CHI0254,2074 W Addison St,Forest Park,IL,60304,homeowner,41.843103,-88.014644
+CHI0323,7323 N Milwaukee Ave,Forest Park,IL,60304,homeowner,41.846041,-87.929398
+DET0824,8398 Maple Rd,Oak Park,MI,48313,homeowner,42.609748,-83.368805
+DET0868,1491 Auburn Rd,Ferndale,MI,48235,multi_family,42.582826,-83.49077
+CHI0151,3718 W Pratt Ave,Bellwood,IL,60618,homeowner,41.805505,-87.953742
+DET0888,8028 Van Dyke Ave,Livonia,MI,48069,commercial,42.499194,-83.386517
+CHI0138,105 W Diversey Pkwy,Forest Park,IL,60160,new_construction,42.022121,-87.752695
+DET0750,9407 Van Dyke Ave,Garden City,MI,48076,renter,42.615667,-83.416755
+DET0843,5528 Rochester Rd,Pontiac,MI,48223,new_construction,42.596501,-83.331882
+DET0658,5990 Rochester Rd,Pontiac,MI,48201,vacant,42.51307,-83.17695
+CHI0338,4731 N Damen Ave,Lincolnwood,IL,60513,multi_family,41.954991,-87.892009
+CHI0458,9420 N Cicero Ave,Forest Park,IL,60618,homeowner,41.804787,-87.985653
+CHI0380,2717 N Cicero Ave,Skokie,IL,60160,homeowner,41.652901,-88.042453
+DET0944,5923 Lahser Rd,Southfield,MI,48069,multi_family,42.399689,-83.111706
+DET0512,2622 Eight Mile Rd,Redford,MI,48223,renter,42.562203,-83.306306
+CHI0187,6140 W Chicago Ave,Norridge,IL,60660,homeowner,41.881341,-87.873657
+CHI0239,4431 N Central Ave,Lincolnwood,IL,60659,homeowner,41.942058,-87.882235
+DET0599,9074 Walton Blvd,Bloomfield Hills,MI,48076,renter,42.472838,-83.105603
+CHI0166,3385 W Belmont Ave,Lincolnwood,IL,60513,renter,41.667084,-87.985074
+DET0652,9239 Quarton Rd,Royal Oak,MI,48309,homeowner,42.24538,-83.251055
+CHI0163,4509 W Montrose Ave,Norridge,IL,60707,homeowner,41.681588,-87.833022
+DET0645,9982 Woodward Ave,Bloomfield Hills,MI,48210,renter,42.59532,-83.28486
+CHI0421,3163 N Damen Ave,Melrose Park,IL,60641,renter,41.938683,-87.886029
+DET0581,1729 Inkster Rd,Auburn Hills,MI,48210,renter,42.391634,-83.281942
+CHI0115,3122 W Morse Ave,Forest Park,IL,60513,renter,41.712265,-87.857905
+CHI0393,4923 W Grand Ave,Cicero,IL,60712,homeowner,41.940865,-87.800479
+CHI0096,5426 N Damen Ave,Rosemont,IL,60651,homeowner,41.737291,-88.010785
+DET0580,9433 Coolidge Hwy,Royal Oak,MI,48307,renter,42.319498,-83.202418
+CHI0496,7951 W Grand Ave,Berwyn,IL,60402,vacant,41.875156,-87.765503
+DET0634,7586 Mound Rd,Hazel Park,MI,48223,homeowner,42.238665,-83.437396
+CHI0143,3597 W Montrose Ave,Harwood Heights,IL,60659,vacant,41.882688,-88.037665
+DET0640,578 Quarton Rd,Birmingham,MI,48067,homeowner,42.380249,-83.390071
+DET0885,2420 Michigan Ave,Madison Heights,MI,48033,renter,42.448613,-83.242559
+DET0730,5641 Grand River Ave,Oak Park,MI,48237,homeowner,42.208245,-83.232396
+CHI0118,2551 N Damen Ave,Oak Park,IL,60660,multi_family,41.879552,-87.840741
+DET0797,9415 Mound Rd,Garden City,MI,48210,renter,42.220331,-83.292148
+DET0877,4468 Maple Rd,Berkley,MI,48076,commercial,42.230876,-83.474362
+CHI0031,9519 W Grand Ave,Maywood,IL,60630,renter,41.90056,-87.836725
+CHI0267,9152 N Damen Ave,Berwyn,IL,60402,multi_family,42.026356,-87.868065
+CHI0416,7030 W Addison St,Oak Park,IL,60601,homeowner,41.770282,-87.957521
+CHI0261,5931 W Peterson Ave,Lincolnwood,IL,60657,multi_family,41.926753,-87.982161
+DET0808,3275 Gratiot Ave,Garden City,MI,48067,homeowner,42.553848,-83.207357
+DET0660,9372 Maple Rd,Auburn Hills,MI,48067,renter,42.344609,-83.137539
+DET0617,8782 Lahser Rd,Auburn Hills,MI,48210,vacant,42.556825,-83.393858
+DET0893,9175 Six Mile Rd,Southfield,MI,48313,new_construction,42.505188,-83.147306
+CHI0412,6796 N Laramie Ave,Morton Grove,IL,60131,renter,41.961278,-87.874042
+CHI0327,2018 W Montrose Ave,River Forest,IL,60513,renter,41.858617,-88.003163
+DET0844,7654 Telegraph Rd,Garden City,MI,48210,commercial,42.450076,-83.164616
+CHI0074,4539 W Morse Ave,Stone Park,IL,60164,multi_family,41.756824,-87.863724
+DET0598,5618 Six Mile Rd,Bloomfield Hills,MI,48307,homeowner,42.592015,-83.105415
+CHI0441,9571 W Fullerton Ave,Norridge,IL,60160,homeowner,41.921052,-87.812333
+DET0779,7726 Five Mile Rd,Clawson,MI,48221,homeowner,42.235461,-83.193305
+DET0969,7511 Woodward Ave,Warren,MI,48235,commercial,42.472878,-83.382614
+DET0986,8935 Quarton Rd,Clawson,MI,48201,new_construction,42.303493,-83.148145
+DET0747,8925 Inkster Rd,Dearborn,MI,48307,renter,42.458676,-83.207387
+CHI0061,8551 W Peterson Ave,Lincolnwood,IL,60513,homeowner,41.98636,-87.973041
+DET0682,2997 Mound Rd,Ferndale,MI,48228,homeowner,42.463909,-83.498394
+DET0526,826 Greenfield Rd,Madison Heights,MI,48221,homeowner,42.398202,-83.422922
+CHI0464,5557 W Addison St,Cicero,IL,60402,commercial,41.979437,-87.985693
+CHI0241,9680 N Pulaski Rd,Skokie,IL,60630,renter,41.670035,-87.763217
+CHI0354,4701 N Cicero Ave,Morton Grove,IL,60659,renter,41.888881,-87.865499
+DET0752,3956 Livernois Ave,Redford,MI,48237,renter,42.403644,-83.159507
+DET0874,3909 Coolidge Hwy,Detroit,MI,48069,multi_family,42.580458,-83.231548
+CHI0013,2564 W Armitage Ave,Niles,IL,60630,homeowner,41.945422,-87.834491
+CHI0169,1368 W Addison St,Melrose Park,IL,60625,homeowner,41.702148,-87.86213
+DET0835,8053 Grand River Ave,Redford,MI,48071,homeowner,42.253636,-83.498016
+CHI0131,3089 N Lincoln Ave,Rosemont,IL,60131,multi_family,41.785694,-88.047924
+CHI0003,9740 N Pulaski Rd,Norridge,IL,60712,commercial,41.84571,-87.923508
+CHI0222,6019 W Peterson Ave,Berwyn,IL,60660,multi_family,41.739162,-87.827187
+CHI0306,9067 N Western Ave,Oak Park,IL,60630,renter,42.03424,-87.85729
+CHI0316,8543 W Fullerton Ave,Cicero,IL,60660,homeowner,41.947413,-88.016225
+CHI0102,3354 N Lincoln Ave,River Forest,IL,60618,homeowner,41.917182,-87.947051
+DET0935,475 Woodward Ave,Sterling Heights,MI,48073,multi_family,42.250712,-83.392527
+DET0513,3712 Woodward Ave,Garden City,MI,48221,commercial,42.315518,-83.395115
+CHI0045,1920 N Kedzie Ave,Morton Grove,IL,60402,new_construction,41.824455,-87.95776
+DET0892,8954 Maple Rd,Royal Oak,MI,48301,commercial,42.333428,-83.432528
+CHI0150,1436 W Peterson Ave,Maywood,IL,60630,renter,41.917301,-88.028382
+CHI0064,726 W Devon Ave,Oak Park,IL,60660,homeowner,41.967385,-88.04112
+DET0858,8169 Inkster Rd,Redford,MI,48201,renter,42.34164,-83.424294
+CHI0263,219 N Central Ave,Morton Grove,IL,60160,commercial,41.904505,-87.842964
+DET0696,3923 Van Dyke Ave,Auburn Hills,MI,48237,commercial,42.429972,-83.21091
+CHI0082,1851 N Milwaukee Ave,Niles,IL,60659,homeowner,41.969737,-87.98458
+DET0738,4345 Eight Mile Rd,Troy,MI,48069,new_construction,42.449307,-83.160727
+DET0987,2001 Big Beaver Rd,Warren,MI,48201,homeowner,42.529384,-83.11034
+CHI0445,7380 W Diversey Pkwy,Cicero,IL,60164,homeowner,41.776088,-87.784174
+DET0859,4691 Grand River Ave,Livonia,MI,48210,multi_family,42.47896,-83.375547
+DET0663,3076 Gratiot Ave,Royal Oak,MI,48313,homeowner,42.549849,-83.312193
+DET0805,7161 Rochester Rd,Bloomfield Hills,MI,48069,homeowner,42.506698,-83.324221
+CHI0108,6838 N Ashland Ave,Rosemont,IL,60639,homeowner,41.864017,-88.007275
+DET0916,8716 Grand River Ave,Berkley,MI,48201,homeowner,42.608394,-83.491496
+CHI0035,7904 W Peterson Ave,River Forest,IL,60625,multi_family,41.879119,-87.862245
+CHI0424,4838 W Addison St,Chicago,IL,60301,renter,41.858083,-87.978893
+CHI0307,2861 W Morse Ave,Maywood,IL,60659,commercial,41.776006,-87.883075
+DET0735,7334 Five Mile Rd,Berkley,MI,48221,multi_family,42.572062,-83.284666
+DET0691,437 Michigan Ave,Sterling Heights,MI,48076,renter,42.437787,-83.390563
+DET0678,3470 Van Dyke Ave,Berkley,MI,48071,homeowner,42.429385,-83.252722
+CHI0084,6426 N Lincoln Ave,Berwyn,IL,60625,homeowner,41.986761,-87.824473
+DET0928,759 Michigan Ave,Royal Oak,MI,48237,renter,42.448702,-83.114084
+DET0954,551 Quarton Rd,Troy,MI,48209,multi_family,42.515134,-83.454089
+CHI0483,8611 W Pratt Ave,Franklin Park,IL,60707,multi_family,41.957931,-87.818134
+DET0754,6629 Grand River Ave,Troy,MI,48221,renter,42.353547,-83.480087
+DET0533,2342 Five Mile Rd,Oak Park,MI,48073,renter,42.544434,-83.126407
+DET0953,4142 Seven Mile Rd,Auburn Hills,MI,48307,multi_family,42.273048,-83.352347
+CHI0255,8909 N Elston Ave,Berwyn,IL,60601,multi_family,41.717716,-87.780447
+CHI0322,4259 W Montrose Ave,Elmwood Park,IL,60131,homeowner,41.735446,-87.787384
+DET0917,1161 Six Mile Rd,Madison Heights,MI,48223,multi_family,42.514886,-83.363688
+CHI0188,2055 W Montrose Ave,River Forest,IL,60651,new_construction,41.925904,-88.042568
+DET0692,2668 Van Dyke Ave,Madison Heights,MI,48210,new_construction,42.590995,-83.196919
+DET0731,9575 Grand River Ave,Warren,MI,48309,renter,42.613206,-83.309107
+DET0518,5953 Greenfield Rd,Birmingham,MI,48210,homeowner,42.320391,-83.140205
+CHI0431,1650 N Elston Ave,Melrose Park,IL,60601,multi_family,42.026807,-87.96824
+CHI0040,6943 W Chicago Ave,Maywood,IL,60630,renter,41.985134,-88.032748
+DET0712,1379 Inkster Rd,Dearborn,MI,48228,multi_family,42.399682,-83.343891
+DET0727,1616 Gratiot Ave,Detroit,MI,48209,new_construction,42.573758,-83.294085
+CHI0414,108 W Armitage Ave,Niles,IL,60639,homeowner,41.71179,-87.759443
+CHI0155,4341 W Chicago Ave,Franklin Park,IL,60651,homeowner,41.765043,-87.943818
+DET0527,1085 Walton Blvd,Clawson,MI,48223,homeowner,42.597621,-83.311534
+CHI0088,4740 N Kedzie Ave,Maywood,IL,60660,multi_family,41.751184,-87.99469
+CHI0179,8408 W Addison St,Berwyn,IL,60304,commercial,41.761278,-87.983393
+DET0715,3174 Five Mile Rd,Garden City,MI,48209,renter,42.592855,-83.298073
+CHI0345,2418 W North Ave,Berwyn,IL,60402,multi_family,41.732967,-88.022356
+CHI0030,1055 W Devon Ave,Stone Park,IL,60707,multi_family,41.680229,-88.040412
+CHI0204,7633 W Fullerton Ave,Elmwood Park,IL,60712,commercial,41.698842,-87.908228
+DET0600,7485 Seven Mile Rd,Ferndale,MI,48307,multi_family,42.321033,-83.268803
+CHI0252,7734 W Fullerton Ave,Cicero,IL,60712,homeowner,41.723871,-87.768705
+CHI0375,3398 N Laramie Ave,Skokie,IL,60641,homeowner,41.776285,-87.848554
+DET0555,627 Seven Mile Rd,Royal Oak,MI,48201,renter,42.590651,-83.335944
+CHI0389,6319 N Ashland Ave,Niles,IL,60601,commercial,41.675358,-87.85866
+CHI0154,5892 W Irving Park Rd,Forest Park,IL,60618,homeowner,41.674719,-88.040118
+CHI0246,3440 W Lawrence Ave,Maywood,IL,60601,homeowner,41.698286,-87.998278
+CHI0218,2788 W Armitage Ave,Forest Park,IL,60630,homeowner,41.938345,-87.946504
+CHI0272,6552 W Lawrence Ave,River Forest,IL,60513,renter,41.771167,-87.952671
+DET0706,6103 Woodward Ave,Bloomfield Hills,MI,48154,renter,42.538593,-83.178977
+DET0510,1207 Orchard Lake Rd,Redford,MI,48069,multi_family,42.311495,-83.426002
+DET0773,8427 Orchard Lake Rd,Pontiac,MI,48223,renter,42.320152,-83.318037
+CHI0147,157 W North Ave,Norridge,IL,60707,renter,42.020383,-87.938073
+DET0537,7166 Telegraph Rd,Detroit,MI,48313,multi_family,42.274723,-83.272455
+CHI0037,9432 W Peterson Ave,Rosemont,IL,60657,commercial,41.7843,-87.829882
+DET0544,4169 Maple Rd,Madison Heights,MI,48237,commercial,42.345258,-83.232276
+DET0642,4385 Gratiot Ave,Warren,MI,48033,multi_family,42.562011,-83.104001
+CHI0427,3454 W North Ave,Berwyn,IL,60641,homeowner,42.010332,-87.897044
+CHI0211,9935 W Morse Ave,Elmwood Park,IL,60639,homeowner,41.693984,-87.750281
+DET0644,2538 Mound Rd,Warren,MI,48154,renter,42.33731,-83.44285
+CHI0468,8284 N California Ave,Cicero,IL,60630,renter,41.86311,-87.965909
+DET0999,9272 Five Mile Rd,Auburn Hills,MI,48221,homeowner,42.480044,-83.310935
+DET0965,8416 Orchard Lake Rd,Warren,MI,48223,homeowner,42.450025,-83.156131
+DET0943,5303 Walton Blvd,Madison Heights,MI,48069,homeowner,42.495222,-83.372516
+DET0547,3431 Mound Rd,Southfield,MI,48033,new_construction,42.213455,-83.137241
+DET0565,4673 Seven Mile Rd,Detroit,MI,48219,renter,42.44285,-83.387305
+CHI0437,8403 N Ashland Ave,Franklin Park,IL,60641,homeowner,41.898919,-87.857583
+DET0764,8229 Livernois Ave,Pontiac,MI,48313,multi_family,42.255676,-83.492867
+DET0584,3027 Livernois Ave,Berkley,MI,48071,multi_family,42.30864,-83.303648
+CHI0313,4944 N Ashland Ave,Bellwood,IL,60641,commercial,41.711333,-87.783317
+DET0763,9804 Big Beaver Rd,Madison Heights,MI,48076,homeowner,42.29569,-83.351365
+DET0784,6780 Six Mile Rd,Dearborn,MI,48313,renter,42.5881,-83.296337
+DET0635,9499 Maple Rd,Royal Oak,MI,48307,renter,42.546717,-83.469388
+CHI0059,9486 W Irving Park Rd,Maywood,IL,60630,renter,41.850785,-87.980214
+DET0746,6068 Michigan Ave,Birmingham,MI,48309,multi_family,42.455763,-83.430753
+DET0651,5138 Eight Mile Rd,Bloomfield Hills,MI,48071,commercial,42.221797,-83.244251
+CHI0180,4312 N Central Ave,River Forest,IL,60647,multi_family,41.878919,-87.907266
+CHI0371,9587 W Lawrence Ave,Chicago,IL,60301,homeowner,41.688136,-87.994785
+CHI0282,4290 W Diversey Pkwy,Des Plaines,IL,60651,commercial,41.919819,-87.830319
+DET0688,4575 Seven Mile Rd,Livonia,MI,48309,renter,42.211618,-83.384818
+DET0982,6398 Inkster Rd,Southfield,MI,48071,homeowner,42.585541,-83.284959
+CHI0465,234 N Harlem Ave,Franklin Park,IL,60131,homeowner,41.881591,-87.881324
+DET0813,2195 Big Beaver Rd,Hazel Park,MI,48307,renter,42.448247,-83.469013
+DET0881,6162 Grand River Ave,Clawson,MI,48076,renter,42.22529,-83.230768
+CHI0356,6761 W Addison St,Cicero,IL,60301,commercial,41.67091,-87.88176
+DET0970,7115 Orchard Lake Rd,Troy,MI,48301,renter,42.402103,-83.328081
+CHI0319,9965 W Lawrence Ave,Berwyn,IL,60647,renter,41.920254,-87.979542
+CHI0178,5725 W Fullerton Ave,Bellwood,IL,60647,commercial,41.990675,-87.762992
+CHI0190,7673 W Bryn Mawr Ave,Melrose Park,IL,60618,homeowner,41.737375,-87.804322
+DET0721,8664 Eight Mile Rd,Royal Oak,MI,48235,multi_family,42.263128,-83.223272
+CHI0466,7809 N Lincoln Ave,Harwood Heights,IL,60707,homeowner,41.795283,-87.802538
+CHI0009,2904 W Irving Park Rd,Niles,IL,60625,renter,41.720409,-88.017062
+DET0833,1277 Mound Rd,Southfield,MI,48309,renter,42.478051,-83.299092
+DET0539,2533 Orchard Lake Rd,Garden City,MI,48235,renter,42.276598,-83.477729
+CHI0487,661 W Addison St,Maywood,IL,60647,renter,41.75027,-87.995939
+CHI0492,3623 N Lincoln Ave,Skokie,IL,60164,renter,41.813995,-87.918375
+CHI0028,3463 N Cicero Ave,Niles,IL,60301,multi_family,41.963949,-87.916765
+DET0593,1958 Van Dyke Ave,Madison Heights,MI,48223,homeowner,42.343027,-83.406311
+DET0605,9423 Woodward Ave,Southfield,MI,48223,multi_family,42.303079,-83.387725
+CHI0104,6282 N Cicero Ave,Berwyn,IL,60647,vacant,41.79905,-87.857541
+CHI0213,4317 N Cicero Ave,Norridge,IL,60304,homeowner,41.704562,-88.007153
+CHI0184,497 W Montrose Ave,Lincolnwood,IL,60630,renter,41.86484,-87.99159
+DET0989,8138 Inkster Rd,Troy,MI,48313,multi_family,42.445692,-83.121863
+CHI0432,7437 N Damen Ave,Stone Park,IL,60601,homeowner,41.918657,-87.767148
+DET0655,5600 Walton Blvd,Troy,MI,48313,renter,42.427028,-83.319651
+CHI0216,7173 N Ashland Ave,Chicago,IL,60660,multi_family,41.650014,-87.843246
+CHI0103,7124 W Pratt Ave,Rosemont,IL,60513,renter,41.901492,-87.907546
+CHI0253,7486 W Armitage Ave,Niles,IL,60647,multi_family,41.842249,-87.935138
+DET0947,6495 Five Mile Rd,Hazel Park,MI,48235,homeowner,42.508509,-83.481792
+DET0723,6308 Walton Blvd,Hazel Park,MI,48209,renter,42.208635,-83.11111
+DET0861,9702 Maple Rd,Hazel Park,MI,48069,new_construction,42.3658,-83.311603
+CHI0332,5785 N Harlem Ave,Skokie,IL,60160,multi_family,42.04205,-87.789114
+CHI0294,9710 W Morse Ave,Franklin Park,IL,60601,commercial,42.019726,-87.805779
+CHI0140,3699 W Armitage Ave,Maywood,IL,60647,multi_family,41.956799,-88.038307
+DET0929,389 Orchard Lake Rd,Redford,MI,48069,homeowner,42.491354,-83.357375
+CHI0219,5457 N Damen Ave,Stone Park,IL,60657,homeowner,41.868225,-87.929717
+DET0574,2853 Grand River Ave,Auburn Hills,MI,48076,homeowner,42.52505,-83.343303
+DET0602,8876 Coolidge Hwy,Dearborn,MI,48201,homeowner,42.518162,-83.127194
+DET0508,2501 Maple Rd,Hazel Park,MI,48033,homeowner,42.38715,-83.197093
+DET0507,7514 Pontiac Trail,Birmingham,MI,48221,commercial,42.517803,-83.104028
+DET0960,9004 Gratiot Ave,Warren,MI,48301,homeowner,42.23858,-83.471321
+CHI0107,2224 W Grand Ave,Chicago,IL,60513,multi_family,42.008059,-88.009534
+DET0604,3810 Big Beaver Rd,Hazel Park,MI,48073,homeowner,42.282547,-83.355877
+CHI0242,7663 W Armitage Ave,Skokie,IL,60651,homeowner,41.720447,-88.021053
+CHI0490,430 N Ashland Ave,Chicago,IL,60304,commercial,41.922006,-87.999637
+CHI0196,6785 N Central Ave,Morton Grove,IL,60657,renter,41.704332,-87.980797
+CHI0244,8659 W Chicago Ave,Des Plaines,IL,60659,homeowner,41.692841,-87.955193
+DET0707,6086 Big Beaver Rd,Pontiac,MI,48210,homeowner,42.222926,-83.156267
+CHI0454,6354 N Ashland Ave,Niles,IL,60301,renter,41.730091,-87.982316
+DET0673,4101 Livernois Ave,Berkley,MI,48210,renter,42.578264,-83.28747
+DET0607,4989 Quarton Rd,Royal Oak,MI,48209,homeowner,42.271055,-83.25734
+CHI0101,1746 W Foster Ave,Rosemont,IL,60659,homeowner,41.781562,-87.763425
+CHI0168,2777 W Irving Park Rd,Berwyn,IL,60641,homeowner,41.948023,-88.01286
+DET0959,477 Greenfield Rd,Detroit,MI,48033,multi_family,42.230701,-83.134093
+CHI0488,7163 W Fullerton Ave,Oak Park,IL,60402,renter,42.038656,-88.04727
+DET0579,9014 Rochester Rd,Livonia,MI,48235,renter,42.253833,-83.447498
+DET0895,8641 Lahser Rd,Bloomfield Hills,MI,48313,multi_family,42.555951,-83.363981
+DET0633,9582 Five Mile Rd,Southfield,MI,48210,homeowner,42.367893,-83.100404
+CHI0032,7650 N Harlem Ave,Forest Park,IL,60639,renter,41.809379,-87.998324
+CHI0174,8752 N Kedzie Ave,Lincolnwood,IL,60160,renter,41.677836,-87.869316
+CHI0320,8373 W Montrose Ave,Franklin Park,IL,60659,renter,41.995429,-87.907188
+CHI0033,6473 W Devon Ave,Rosemont,IL,60641,renter,41.99717,-87.841608
+DET0656,4392 Telegraph Rd,Royal Oak,MI,48073,commercial,42.515364,-83.47105
+CHI0019,5189 W Diversey Pkwy,Franklin Park,IL,60647,vacant,41.774568,-87.8537
+DET0664,7143 Livernois Ave,Clawson,MI,48223,homeowner,42.341969,-83.192365
+DET0525,8998 Greenfield Rd,Livonia,MI,48235,commercial,42.353405,-83.350635
+CHI0410,4883 W Foster Ave,Stone Park,IL,60160,renter,41.776617,-87.920471
+CHI0125,2411 N Damen Ave,Elmwood Park,IL,60618,renter,41.902644,-87.951679
+CHI0004,3032 W Pratt Ave,Des Plaines,IL,60660,homeowner,41.735036,-87.911555
+CHI0461,2045 W Diversey Pkwy,Cicero,IL,60651,homeowner,42.033453,-87.862136
+DET0564,6374 Van Dyke Ave,Troy,MI,48235,multi_family,42.286753,-83.169003
+CHI0139,4258 N Milwaukee Ave,Norridge,IL,60618,homeowner,41.725522,-87.7636
+DET0641,8637 Gratiot Ave,Sterling Heights,MI,48210,renter,42.498973,-83.410009
+DET0939,4652 Big Beaver Rd,Hazel Park,MI,48313,homeowner,42.216457,-83.275806
+DET0694,4665 Rochester Rd,Auburn Hills,MI,48313,new_construction,42.322105,-83.172538
+DET0516,525 Telegraph Rd,Pontiac,MI,48301,homeowner,42.372805,-83.216522
+CHI0330,2467 N Harlem Ave,Melrose Park,IL,60707,homeowner,41.67795,-87.88402
+DET0740,4837 Gratiot Ave,Detroit,MI,48067,commercial,42.297696,-83.291686
+CHI0193,8098 N Kedzie Ave,Bellwood,IL,60402,homeowner,42.006053,-87.801527
+DET0783,7944 Inkster Rd,Garden City,MI,48069,renter,42.366361,-83.390519
+DET0803,8250 Coolidge Hwy,Bloomfield Hills,MI,48309,new_construction,42.401472,-83.397788
+DET0927,121 Quarton Rd,Troy,MI,48237,homeowner,42.260669,-83.412444
+DET0585,2465 Michigan Ave,Auburn Hills,MI,48235,multi_family,42.258321,-83.128362
+CHI0209,3404 W Armitage Ave,Cicero,IL,60304,multi_family,41.88615,-87.931084
+DET0680,7204 Livernois Ave,Sterling Heights,MI,48309,homeowner,42.352443,-83.294638
+CHI0493,1941 N Elston Ave,Melrose Park,IL,60402,multi_family,41.696965,-87.839884
+CHI0117,6185 N California Ave,Morton Grove,IL,60639,homeowner,41.749667,-87.931964
+CHI0057,6585 N Laramie Ave,Skokie,IL,60625,homeowner,42.023067,-88.03932
+DET0575,8256 Five Mile Rd,Garden City,MI,48071,commercial,42.318639,-83.411997
+CHI0318,3729 W Belmont Ave,Maywood,IL,60160,commercial,41.916193,-88.048307
+DET0596,6722 Mound Rd,Dearborn,MI,48219,homeowner,42.267807,-83.126979
+CHI0173,1881 W Morse Ave,Forest Park,IL,60625,commercial,41.748044,-87.896444
+CHI0310,4100 N Western Ave,Niles,IL,60601,multi_family,41.794316,-87.843592
+DET0700,6899 Five Mile Rd,Royal Oak,MI,48221,renter,42.610719,-83.265307
+CHI0124,7712 N Cicero Ave,Morton Grove,IL,60660,new_construction,41.652419,-87.885917
+DET0594,7031 Six Mile Rd,Auburn Hills,MI,48219,renter,42.246271,-83.185519
+CHI0020,4191 N Elston Ave,Stone Park,IL,60301,vacant,41.97371,-87.847711
+CHI0109,1615 W Bryn Mawr Ave,Norridge,IL,60601,renter,41.771323,-87.827206
+CHI0275,4006 W Armitage Ave,Harwood Heights,IL,60164,multi_family,41.766044,-87.82645
+CHI0402,5482 W Morse Ave,Lincolnwood,IL,60601,new_construction,41.892882,-87.906289
+DET0991,7281 Coolidge Hwy,Berkley,MI,48201,homeowner,42.544395,-83.185536
+CHI0355,6935 N Central Ave,Stone Park,IL,60618,homeowner,41.80624,-87.973562
+DET0802,4685 Quarton Rd,Sterling Heights,MI,48228,new_construction,42.347433,-83.397225
+CHI0170,8877 N Milwaukee Ave,Elmwood Park,IL,60301,commercial,41.733549,-87.894733
+CHI0378,6050 W Lawrence Ave,Maywood,IL,60659,homeowner,41.894449,-87.996994
+DET0823,9553 Maple Rd,Livonia,MI,48223,renter,42.612768,-83.152849
+DET0980,1740 Gratiot Ave,Southfield,MI,48223,new_construction,42.607785,-83.359801
+CHI0491,5818 N Central Ave,Lincolnwood,IL,60402,renter,41.695535,-88.037524
+DET0853,2240 Gratiot Ave,Madison Heights,MI,48209,vacant,42.391001,-83.396421
+DET0690,9258 Lahser Rd,Warren,MI,48313,vacant,42.612591,-83.248581
+DET0753,7377 Rochester Rd,Southfield,MI,48154,homeowner,42.565557,-83.127542
+DET0780,309 Coolidge Hwy,Madison Heights,MI,48073,renter,42.287697,-83.127738
+DET0804,5553 Rochester Rd,Warren,MI,48201,commercial,42.317094,-83.110241
+DET0697,4892 Inkster Rd,Dearborn,MI,48201,homeowner,42.243797,-83.469922
+DET0708,3682 Eight Mile Rd,Berkley,MI,48071,new_construction,42.476736,-83.129384
+CHI0279,3104 W Devon Ave,Berwyn,IL,60647,renter,41.736504,-87.818162
+CHI0400,9168 W Devon Ave,River Forest,IL,60304,multi_family,42.01958,-87.809273
+CHI0386,2202 W Chicago Ave,Bellwood,IL,60707,multi_family,41.666867,-87.801291
+CHI0158,3912 N Pulaski Rd,Niles,IL,60402,renter,41.705893,-87.865189
+DET0629,615 Auburn Rd,Pontiac,MI,48307,homeowner,42.545386,-83.354349
+DET0872,7385 Coolidge Hwy,Redford,MI,48221,homeowner,42.354208,-83.474369
+DET0562,4484 Pontiac Trail,Hazel Park,MI,48069,renter,42.327151,-83.283912
+DET0743,1120 Six Mile Rd,Detroit,MI,48076,renter,42.237245,-83.236018
+DET0571,8200 Inkster Rd,Berkley,MI,48076,homeowner,42.606973,-83.269883
+CHI0449,6828 W Foster Ave,Melrose Park,IL,60707,renter,41.735795,-87.80084
+DET0903,1194 Walton Blvd,Garden City,MI,48071,homeowner,42.249934,-83.487256
+DET0614,2033 Lahser Rd,Bloomfield Hills,MI,48223,homeowner,42.273693,-83.44865
+DET0961,9665 Greenfield Rd,Royal Oak,MI,48228,homeowner,42.209521,-83.276713
+DET0515,6316 Woodward Ave,Detroit,MI,48219,commercial,42.564014,-83.138678
+CHI0373,3880 N Milwaukee Ave,Berwyn,IL,60601,renter,41.924112,-87.997736
+DET0994,7109 Telegraph Rd,Troy,MI,48221,commercial,42.262377,-83.369362
+CHI0304,911 W Pratt Ave,Norridge,IL,60304,homeowner,41.999236,-87.840313
+DET0765,4413 Coolidge Hwy,Livonia,MI,48309,homeowner,42.225442,-83.434729
+DET0646,1904 Michigan Ave,Southfield,MI,48033,homeowner,42.298154,-83.416724
+DET0782,2184 Six Mile Rd,Livonia,MI,48033,renter,42.212665,-83.309482
+DET0896,5812 Pontiac Trail,Redford,MI,48069,homeowner,42.241548,-83.325769
+DET0511,2946 Livernois Ave,Detroit,MI,48221,multi_family,42.538452,-83.23361
+CHI0207,7843 W North Ave,River Forest,IL,60659,commercial,41.991153,-87.828539
+DET0828,5958 Seven Mile Rd,Warren,MI,48073,homeowner,42.247211,-83.278724
+CHI0231,152 N Harlem Ave,Chicago,IL,60131,renter,41.669291,-88.036141
+DET0955,1988 Lahser Rd,Royal Oak,MI,48309,commercial,42.225089,-83.457423
+CHI0469,2701 N Central Ave,River Forest,IL,60513,new_construction,41.968879,-87.7551
+CHI0269,6229 N Western Ave,Berwyn,IL,60639,commercial,41.770742,-87.997981
+DET0561,1088 Orchard Lake Rd,Birmingham,MI,48071,homeowner,42.388283,-83.32053
+DET0684,7527 Mound Rd,Pontiac,MI,48071,vacant,42.451262,-83.274891
+DET0809,7427 Five Mile Rd,Warren,MI,48219,renter,42.476808,-83.454863
+CHI0210,7885 N Harlem Ave,Berwyn,IL,60304,renter,41.711438,-88.000923
+DET0904,6144 Walton Blvd,Clawson,MI,48309,renter,42.332826,-83.290487
+DET0662,5196 Big Beaver Rd,Southfield,MI,48221,renter,42.489119,-83.192076
+DET0769,9866 Maple Rd,Oak Park,MI,48228,commercial,42.267419,-83.294137
+CHI0217,6312 W Foster Ave,Norridge,IL,60651,vacant,41.824001,-87.796701
+DET0867,9829 Gratiot Ave,Detroit,MI,48210,multi_family,42.238457,-83.238148
+DET0920,3806 Eight Mile Rd,Detroit,MI,48223,multi_family,42.451785,-83.412844
+CHI0223,1270 N Pulaski Rd,Des Plaines,IL,60304,commercial,41.75358,-87.797638
+DET0638,4029 Inkster Rd,Garden City,MI,48221,new_construction,42.205375,-83.350613
+CHI0235,9854 N Damen Ave,Bellwood,IL,60707,renter,41.866184,-87.759805
+CHI0444,6863 W Montrose Ave,Skokie,IL,60402,renter,41.792543,-87.791597
+CHI0177,2273 N Kedzie Ave,Morton Grove,IL,60707,multi_family,41.853649,-87.974381
+DET0995,6961 Michigan Ave,Warren,MI,48154,commercial,42.473088,-83.351994
+CHI0436,5325 W Diversey Pkwy,Melrose Park,IL,60639,homeowner,41.782394,-88.024249
+DET0591,8698 Van Dyke Ave,Southfield,MI,48221,homeowner,42.258037,-83.179517
+DET0558,887 Walton Blvd,Southfield,MI,48301,renter,42.513631,-83.20824
+DET0830,1275 Five Mile Rd,Berkley,MI,48069,renter,42.572087,-83.111425
+DET0530,8272 Rochester Rd,Clawson,MI,48301,renter,42.447936,-83.163229
+DET0577,9033 Five Mile Rd,Madison Heights,MI,48201,homeowner,42.614393,-83.144595
+DET0810,358 Six Mile Rd,Livonia,MI,48071,homeowner,42.319428,-83.422279
+DET0540,241 Seven Mile Rd,Troy,MI,48309,homeowner,42.235086,-83.414623
+CHI0083,4799 W North Ave,Niles,IL,60630,homeowner,41.985162,-87.804314
+DET0897,5509 Big Beaver Rd,Livonia,MI,48228,new_construction,42.396542,-83.367797
+CHI0206,5301 N Ashland Ave,Stone Park,IL,60301,homeowner,41.859176,-87.777875
+DET0889,6474 Livernois Ave,Warren,MI,48237,vacant,42.233753,-83.148756
+CHI0459,2001 N Kedzie Ave,Skokie,IL,60707,new_construction,41.946098,-87.75065
+DET0845,2782 Pontiac Trail,Pontiac,MI,48069,homeowner,42.483778,-83.494145
+CHI0149,5158 W Bryn Mawr Ave,Rosemont,IL,60625,homeowner,41.891219,-87.980766
+DET0686,8423 Livernois Ave,Sterling Heights,MI,48301,renter,42.537105,-83.357145
+CHI0334,3787 W Belmont Ave,Melrose Park,IL,60660,homeowner,41.703395,-87.922497
+CHI0376,1021 W Peterson Ave,Oak Park,IL,60659,homeowner,41.839946,-87.84095
+DET0968,1664 Walton Blvd,Madison Heights,MI,48071,homeowner,42.388186,-83.137304
+CHI0015,3932 W Pratt Ave,Melrose Park,IL,60630,renter,41.777643,-87.90026
+CHI0097,7057 N Damen Ave,Morton Grove,IL,60641,multi_family,41.974386,-87.861581
+DET0771,9237 Six Mile Rd,Garden City,MI,48237,renter,42.421999,-83.272902
+CHI0181,7624 N Cicero Ave,Chicago,IL,60707,homeowner,41.771686,-88.041231
+DET0940,509 Quarton Rd,Sterling Heights,MI,48209,homeowner,42.532477,-83.233092
+DET0668,1342 Rochester Rd,Ferndale,MI,48073,renter,42.477409,-83.454604
+DET0757,4083 Lahser Rd,Royal Oak,MI,48307,homeowner,42.320151,-83.475616
+CHI0162,4176 N Western Ave,Berwyn,IL,60625,homeowner,41.678273,-87.999027
+DET0522,5858 Grand River Ave,Ferndale,MI,48228,homeowner,42.542525,-83.3543
+CHI0297,6208 W Armitage Ave,Harwood Heights,IL,60712,homeowner,41.724388,-87.956961
+CHI0185,5097 W Peterson Ave,Lincolnwood,IL,60712,vacant,41.691851,-87.786075
+DET0788,2632 Orchard Lake Rd,Auburn Hills,MI,48309,multi_family,42.325416,-83.43871
+CHI0358,3755 N Damen Ave,Niles,IL,60513,homeowner,41.927005,-88.028503
+DET0506,9846 Livernois Ave,Sterling Heights,MI,48076,homeowner,42.563752,-83.411551
+DET0683,8016 Inkster Rd,Birmingham,MI,48221,homeowner,42.615864,-83.15373
+CHI0291,4499 W Irving Park Rd,Elmwood Park,IL,60131,homeowner,41.746976,-88.046453
+DET0857,6108 Livernois Ave,Birmingham,MI,48069,renter,42.600802,-83.472318
+DET0560,5409 Coolidge Hwy,Redford,MI,48307,renter,42.478549,-83.291973
+CHI0270,3365 W Peterson Ave,Rosemont,IL,60647,homeowner,41.912746,-87.838046
+CHI0350,9155 W Chicago Ave,Elmwood Park,IL,60131,homeowner,41.859579,-87.771496
+DET0772,2259 Woodward Ave,Berkley,MI,48235,homeowner,42.504487,-83.138869
+CHI0043,8500 N Lincoln Ave,Harwood Heights,IL,60641,renter,41.710079,-88.024047
+DET0756,7514 Michigan Ave,Oak Park,MI,48237,renter,42.270062,-83.163067
+DET0524,3409 Walton Blvd,Southfield,MI,48221,homeowner,42.205023,-83.155932
+DET0556,6009 Lahser Rd,Southfield,MI,48228,new_construction,42.556994,-83.110256
+CHI0317,8898 W Fullerton Ave,Stone Park,IL,60160,multi_family,41.941774,-87.93762
+CHI0324,8058 N Ashland Ave,Melrose Park,IL,60707,renter,41.816234,-87.980098
+DET0907,1318 Greenfield Rd,Bloomfield Hills,MI,48033,renter,42.417928,-83.401414
+DET0956,5548 Van Dyke Ave,Sterling Heights,MI,48301,commercial,42.265511,-83.453605
+DET0672,1748 Orchard Lake Rd,Hazel Park,MI,48221,renter,42.58179,-83.414673
+CHI0073,8802 W Chicago Ave,Cicero,IL,60618,homeowner,41.787949,-88.014993
+DET0856,8558 Rochester Rd,Sterling Heights,MI,48076,renter,42.249355,-83.384066
+CHI0311,514 W Irving Park Rd,Cicero,IL,60659,homeowner,41.696247,-87.814868
+CHI0274,4093 W Fullerton Ave,Harwood Heights,IL,60601,homeowner,41.857192,-87.84397
+DET0587,4027 Mound Rd,Warren,MI,48073,multi_family,42.201412,-83.150279
+DET0517,9889 Pontiac Trail,Southfield,MI,48069,homeowner,42.28413,-83.262569
+DET0643,4408 Gratiot Ave,Garden City,MI,48209,renter,42.366584,-83.490825
+CHI0141,4431 W Irving Park Rd,Norridge,IL,60707,renter,41.951341,-87.994829
+DET0744,9638 Coolidge Hwy,Redford,MI,48154,renter,42.461317,-83.405092
+CHI0479,1625 W Armitage Ave,Chicago,IL,60647,homeowner,41.809444,-87.750214
+DET0729,7711 Telegraph Rd,Royal Oak,MI,48221,vacant,42.459498,-83.223141
+CHI0401,9522 N Ashland Ave,Elmwood Park,IL,60660,multi_family,41.968927,-87.763823
+DET0667,9881 Livernois Ave,Madison Heights,MI,48210,multi_family,42.353769,-83.22204
+DET0834,380 Gratiot Ave,Pontiac,MI,48301,new_construction,42.493511,-83.263427
+DET0919,3886 Van Dyke Ave,Dearborn,MI,48210,renter,42.473898,-83.313637
+CHI0011,1007 N Lincoln Ave,Maywood,IL,60301,homeowner,41.812132,-87.780009
+DET0801,1192 Auburn Rd,Auburn Hills,MI,48313,multi_family,42.23739,-83.444663
+DET0669,1703 Five Mile Rd,Ferndale,MI,48076,homeowner,42.383147,-83.389503
+CHI0199,6823 W Irving Park Rd,Chicago,IL,60647,homeowner,41.826662,-87.79098
+DET0997,4346 Grand River Ave,Livonia,MI,48210,homeowner,42.60331,-83.354534
+CHI0484,3748 N Lincoln Ave,Franklin Park,IL,60160,renter,42.016724,-87.903573
+DET0624,4267 Woodward Ave,Auburn Hills,MI,48221,renter,42.450572,-83.458937
+CHI0257,5459 W Peterson Ave,Harwood Heights,IL,60630,multi_family,41.800742,-87.95714
+DET0910,2131 Walton Blvd,Madison Heights,MI,48235,renter,42.242202,-83.368437
+DET0854,5952 Auburn Rd,Hazel Park,MI,48307,renter,42.529444,-83.491006
+CHI0383,947 W Pratt Ave,Melrose Park,IL,60131,vacant,41.666936,-87.970775
+DET0612,6957 Eight Mile Rd,Southfield,MI,48210,homeowner,42.42525,-83.232143
+DET0572,7300 Six Mile Rd,Ferndale,MI,48223,homeowner,42.407941,-83.240309
+DET0568,1158 Livernois Ave,Garden City,MI,48069,multi_family,42.25194,-83.115701
+DET0636,4555 Inkster Rd,Dearborn,MI,48301,homeowner,42.503639,-83.265954
+DET0975,7139 Michigan Ave,Troy,MI,48210,homeowner,42.201753,-83.280545
+CHI0110,8288 W Morse Ave,Stone Park,IL,60651,vacant,41.741389,-87.854631
+DET0653,9591 Quarton Rd,Livonia,MI,48154,homeowner,42.305874,-83.342503
+DET0695,4217 Walton Blvd,Pontiac,MI,48313,multi_family,42.341252,-83.234839
+DET0632,2669 Grand River Ave,Sterling Heights,MI,48237,homeowner,42.219221,-83.289978
+DET0625,3354 Eight Mile Rd,Madison Heights,MI,48313,renter,42.455951,-83.398013
+CHI0398,1407 W Montrose Ave,Franklin Park,IL,60660,homeowner,41.77425,-87.985428
+CHI0228,6555 N Cicero Ave,Bellwood,IL,60659,homeowner,42.030407,-88.035729
+DET0535,4862 Greenfield Rd,Hazel Park,MI,48309,multi_family,42.250149,-83.172397
+CHI0048,9755 W Belmont Ave,Des Plaines,IL,60712,homeowner,41.827571,-87.974099
+CHI0024,7309 N Pulaski Rd,Harwood Heights,IL,60660,homeowner,41.801583,-87.846495
+CHI0245,5536 W Addison St,Harwood Heights,IL,60630,homeowner,41.924308,-87.839238
+DET0698,6297 Rochester Rd,Auburn Hills,MI,48301,homeowner,42.488266,-83.37052
+DET0876,791 Lahser Rd,Southfield,MI,48309,renter,42.356384,-83.177373
+DET0521,8370 Inkster Rd,Warren,MI,48228,renter,42.519785,-83.469511
+DET0934,7726 Orchard Lake Rd,Auburn Hills,MI,48235,homeowner,42.277494,-83.379646
+CHI0382,7520 N Pulaski Rd,Skokie,IL,60651,homeowner,41.827323,-87.876095
+DET0936,1091 Walton Blvd,Redford,MI,48309,renter,42.427411,-83.19731
+CHI0075,7386 N Ashland Ave,Chicago,IL,60164,new_construction,41.747242,-87.917321
+CHI0450,8818 N Lincoln Ave,Harwood Heights,IL,60651,multi_family,41.983109,-87.763287
+CHI0328,6823 W Armitage Ave,Harwood Heights,IL,60513,new_construction,41.768749,-87.869032
+DET0659,3971 Big Beaver Rd,Royal Oak,MI,48073,renter,42.399485,-83.286567
+CHI0344,9052 N Laramie Ave,Melrose Park,IL,60618,multi_family,42.029516,-87.912281
+DET0597,354 Five Mile Rd,Troy,MI,48071,renter,42.282448,-83.394866
+CHI0473,2390 N Kedzie Ave,Morton Grove,IL,60618,multi_family,41.944616,-87.790981
+CHI0065,3132 N Cicero Ave,Melrose Park,IL,60601,multi_family,42.020083,-87.851088
+CHI0186,8068 N Milwaukee Ave,Elmwood Park,IL,60625,renter,41.883683,-87.894093
+DET0639,5215 Five Mile Rd,Madison Heights,MI,48223,homeowner,42.510426,-83.116506
+CHI0457,5473 W Addison St,Bellwood,IL,60618,homeowner,41.878194,-87.814985
+CHI0086,4209 W Irving Park Rd,Harwood Heights,IL,60639,homeowner,41.949425,-87.801479
+CHI0300,650 N Laramie Ave,Des Plaines,IL,60660,homeowner,41.724428,-88.039174
+CHI0066,6072 W Diversey Pkwy,River Forest,IL,60707,renter,41.862126,-87.991128
+CHI0406,6285 W Lawrence Ave,Stone Park,IL,60659,renter,41.736381,-87.948106
+DET0699,8503 Woodward Ave,Oak Park,MI,48069,homeowner,42.562924,-83.423104
+CHI0159,3320 N Central Ave,Bellwood,IL,60659,multi_family,41.762315,-87.761026
+CHI0120,1400 N Elston Ave,Niles,IL,60657,multi_family,41.854977,-87.906417
+CHI0116,634 W Grand Ave,Oak Park,IL,60618,commercial,41.765405,-87.86736
+CHI0329,8068 W Diversey Pkwy,Des Plaines,IL,60641,homeowner,41.825006,-87.877754
+DET0590,9546 Pontiac Trail,Detroit,MI,48309,homeowner,42.255578,-83.459795
+CHI0160,5670 N Central Ave,Maywood,IL,60630,multi_family,41.664968,-87.984405
+CHI0278,3480 N Cicero Ave,Niles,IL,60647,renter,41.77725,-87.954886
+DET0702,725 Rochester Rd,Berkley,MI,48237,homeowner,42.326263,-83.295678
+CHI0284,3374 N Ashland Ave,Skokie,IL,60639,homeowner,41.946393,-88.025269
+CHI0369,5547 W Grand Ave,Bellwood,IL,60657,homeowner,41.971642,-88.037985
+CHI0366,3172 W Fullerton Ave,Maywood,IL,60630,multi_family,41.891813,-87.764039
+DET0675,5228 Livernois Ave,Berkley,MI,48221,renter,42.379049,-83.148893
+DET0973,5908 Seven Mile Rd,Southfield,MI,48073,homeowner,42.444156,-83.360436
+DET0732,1493 Seven Mile Rd,Berkley,MI,48223,homeowner,42.334059,-83.246439
+DET0770,6778 Woodward Ave,Detroit,MI,48237,renter,42.587804,-83.410214
+DET0549,2170 Pontiac Trail,Birmingham,MI,48067,homeowner,42.459186,-83.242697
+DET0550,8484 Six Mile Rd,Madison Heights,MI,48223,renter,42.611706,-83.456128
+CHI0038,4385 W North Ave,Forest Park,IL,60160,homeowner,41.654802,-87.954274
+CHI0039,8477 W Chicago Ave,Rosemont,IL,60659,homeowner,41.808905,-88.035673
+CHI0486,5937 W Addison St,Skokie,IL,60647,renter,41.821257,-87.907589
+CHI0243,9003 W Peterson Ave,Elmwood Park,IL,60647,homeowner,41.660953,-87.901901
+CHI0392,8608 N Lincoln Ave,Skokie,IL,60660,new_construction,41.991175,-88.043007
+CHI0264,1930 W Belmont Ave,Harwood Heights,IL,60657,homeowner,41.868599,-87.913061
+CHI0340,1951 W Chicago Ave,Lincolnwood,IL,60164,homeowner,41.951294,-87.879653
+DET0609,7395 Michigan Ave,Redford,MI,48076,new_construction,42.384244,-83.124319
+DET0762,1688 Mound Rd,Berkley,MI,48067,homeowner,42.289589,-83.191909
+CHI0136,7242 W Morse Ave,Franklin Park,IL,60618,new_construction,41.788178,-88.04652
+CHI0455,4311 W Irving Park Rd,Chicago,IL,60712,homeowner,42.010183,-87.786907
+CHI0227,5156 W Bryn Mawr Ave,Skokie,IL,60630,homeowner,41.729076,-87.868777
+DET0501,3777 Maple Rd,Troy,MI,48235,renter,42.60203,-83.482405
+CHI0249,4913 N Elston Ave,Maywood,IL,60660,homeowner,41.675909,-87.890719
+CHI0164,7118 W North Ave,Morton Grove,IL,60647,multi_family,41.82804,-87.870142
+DET0852,5236 Big Beaver Rd,Hazel Park,MI,48073,homeowner,42.419119,-83.105011
+DET0734,8789 Big Beaver Rd,Redford,MI,48221,homeowner,42.585276,-83.319296
+CHI0339,7070 N Pulaski Rd,Berwyn,IL,60639,renter,42.035477,-87.919541
+CHI0134,9880 W Armitage Ave,Stone Park,IL,60513,renter,41.831855,-87.894395
+CHI0384,6357 W Morse Ave,Cicero,IL,60301,homeowner,41.85189,-87.843655
+CHI0248,522 W Fullerton Ave,Franklin Park,IL,60657,homeowner,41.724212,-87.822417
+DET0529,6094 Pontiac Trail,Detroit,MI,48210,homeowner,42.619155,-83.264936
+DET0778,3700 Pontiac Trail,Ferndale,MI,48076,multi_family,42.344012,-83.200481
+CHI0308,1674 N Cicero Ave,Skokie,IL,60160,new_construction,41.718908,-87.831949
+CHI0481,5859 W Diversey Pkwy,Maywood,IL,60630,homeowner,41.751194,-87.771134
+CHI0471,9547 N California Ave,Morton Grove,IL,60707,multi_family,41.822874,-87.925154
+CHI0460,4498 N Lincoln Ave,Cicero,IL,60131,commercial,41.75182,-87.899594
+CHI0062,6997 N Elston Ave,Lincolnwood,IL,60513,homeowner,41.743896,-87.892653
+DET0766,8806 Rochester Rd,Oak Park,MI,48228,multi_family,42.563741,-83.437525
+DET0502,8524 Livernois Ave,Ferndale,MI,48307,homeowner,42.315494,-83.185679
+CHI0348,9390 W Devon Ave,Cicero,IL,60304,commercial,41.721828,-87.812633
+CHI0144,3150 N Damen Ave,Morton Grove,IL,60660,commercial,41.975979,-87.939362
+DET0984,1184 Gratiot Ave,Ferndale,MI,48309,multi_family,42.476419,-83.23247
+DET0795,7557 Livernois Ave,Garden City,MI,48033,homeowner,42.612426,-83.31804
+DET0878,694 Pontiac Trail,Detroit,MI,48067,homeowner,42.492779,-83.484013
+CHI0435,9405 W Belmont Ave,Maywood,IL,60659,new_construction,41.926771,-87.852197
+DET0800,7335 Rochester Rd,Redford,MI,48237,new_construction,42.396905,-83.473671
+CHI0381,424 W North Ave,Lincolnwood,IL,60160,vacant,41.763692,-87.96576
+DET0722,2702 Greenfield Rd,Detroit,MI,48313,homeowner,42.400737,-83.248369
+DET0966,6146 Auburn Rd,Dearborn,MI,48073,homeowner,42.277663,-83.453129
+CHI0396,2716 N Milwaukee Ave,Norridge,IL,60659,new_construction,41.867692,-87.763199
+CHI0238,9130 N Kedzie Ave,Norridge,IL,60647,multi_family,41.85803,-87.830663
+DET0687,868 Walton Blvd,Hazel Park,MI,48071,commercial,42.254354,-83.44057
+CHI0309,947 W Montrose Ave,Lincolnwood,IL,60639,homeowner,41.662439,-87.808472
+CHI0200,6463 W North Ave,Forest Park,IL,60651,renter,41.680272,-87.890161
+CHI0448,6075 N Central Ave,Norridge,IL,60301,new_construction,41.969667,-87.782004
+CHI0225,751 N Western Ave,Bellwood,IL,60707,multi_family,41.698447,-88.045699
+DET0627,1232 Eight Mile Rd,Madison Heights,MI,48228,homeowner,42.427896,-83.207121
+CHI0429,1273 W Armitage Ave,Lincolnwood,IL,60639,multi_family,41.77563,-87.829754
+DET0505,8096 Inkster Rd,Clawson,MI,48309,homeowner,42.492453,-83.137083
+DET0996,7355 Lahser Rd,Detroit,MI,48201,multi_family,42.35277,-83.438203
+DET0570,3224 Mound Rd,Birmingham,MI,48033,renter,42.211313,-83.481329
+DET0870,5084 Eight Mile Rd,Royal Oak,MI,48301,renter,42.382335,-83.103558
+DET0671,4172 Coolidge Hwy,Garden City,MI,48313,homeowner,42.367295,-83.316316
+DET0758,1413 Livernois Ave,Ferndale,MI,48228,homeowner,42.614519,-83.199741
+DET0891,699 Woodward Ave,Pontiac,MI,48223,homeowner,42.431819,-83.203686
+CHI0321,7288 W Lawrence Ave,Franklin Park,IL,60657,multi_family,41.988878,-87.924909
+DET0666,4831 Five Mile Rd,Oak Park,MI,48221,commercial,42.320344,-83.377785
+CHI0176,956 N Western Ave,Elmwood Park,IL,60647,vacant,41.7945,-87.778415
+DET0971,9288 Orchard Lake Rd,Pontiac,MI,48073,renter,42.30743,-83.228073
+CHI0221,1830 W Grand Ave,Lincolnwood,IL,60630,renter,41.895827,-87.918893
+CHI0442,8491 W North Ave,Des Plaines,IL,60618,renter,41.668139,-87.924553
+DET0589,4397 Orchard Lake Rd,Sterling Heights,MI,48237,homeowner,42.449028,-83.21104
+DET0626,3462 Lahser Rd,Sterling Heights,MI,48067,renter,42.604477,-83.105829
+DET0552,6027 Telegraph Rd,Auburn Hills,MI,48033,multi_family,42.575195,-83.39826
+CHI0215,6162 W Chicago Ave,Forest Park,IL,60660,homeowner,42.021843,-87.806908
+DET0921,9030 Inkster Rd,Hazel Park,MI,48076,homeowner,42.542962,-83.157475
+DET0819,5131 Five Mile Rd,Madison Heights,MI,48307,multi_family,42.34222,-83.377959
+CHI0299,2895 W Lawrence Ave,Norridge,IL,60707,renter,42.007629,-87.754709
+CHI0121,2916 N California Ave,Chicago,IL,60657,homeowner,41.771329,-88.049967
+DET0798,7242 Michigan Ave,Bloomfield Hills,MI,48313,homeowner,42.29623,-83.118578
+DET0820,9594 Coolidge Hwy,Dearborn,MI,48076,homeowner,42.418264,-83.413367
+CHI0259,112 W Morse Ave,Melrose Park,IL,60618,homeowner,41.918064,-87.813631
+CHI0305,242 N Ashland Ave,River Forest,IL,60160,commercial,41.694067,-88.033846
+DET0711,9914 Six Mile Rd,Royal Oak,MI,48307,renter,42.278117,-83.393546
+CHI0161,612 N Pulaski Rd,Melrose Park,IL,60131,homeowner,41.931385,-88.038572
+CHI0078,1834 N Laramie Ave,Stone Park,IL,60712,vacant,41.891989,-87.889624
+CHI0167,7754 W Diversey Pkwy,Melrose Park,IL,60513,renter,41.949523,-87.979379
+DET0832,9360 Grand River Ave,Oak Park,MI,48071,homeowner,42.425353,-83.196871
+DET0806,3261 Woodward Ave,Pontiac,MI,48237,commercial,42.572451,-83.460973
+DET0573,5510 Five Mile Rd,Bloomfield Hills,MI,48076,renter,42.453108,-83.378878
+CHI0475,9306 W Bryn Mawr Ave,Berwyn,IL,60160,multi_family,41.809365,-87.859965
+DET0749,857 Quarton Rd,Detroit,MI,48223,homeowner,42.554685,-83.195822
+DET0908,9088 Quarton Rd,Livonia,MI,48076,homeowner,42.481068,-83.133577
+CHI0123,6671 W North Ave,Melrose Park,IL,60707,homeowner,41.752322,-87.931975
+CHI0256,1203 W Addison St,Chicago,IL,60618,renter,42.018929,-88.037664
+DET0719,8133 Gratiot Ave,Ferndale,MI,48071,homeowner,42.319507,-83.403524
+DET0647,1934 Auburn Rd,Warren,MI,48067,multi_family,42.611195,-83.115799
+DET0566,1612 Six Mile Rd,Redford,MI,48067,homeowner,42.487039,-83.229309
+CHI0413,8378 W Morse Ave,Morton Grove,IL,60304,homeowner,41.834038,-87.937986
+DET0576,3418 Telegraph Rd,Troy,MI,48210,renter,42.489491,-83.112386
+CHI0391,1617 W Addison St,Franklin Park,IL,60402,commercial,41.769247,-87.797876
+DET0603,4834 Gratiot Ave,Troy,MI,48307,homeowner,42.266388,-83.304441
+DET0826,223 Five Mile Rd,Troy,MI,48210,multi_family,42.36628,-83.205974
+CHI0341,7860 N Lincoln Ave,River Forest,IL,60659,homeowner,41.791264,-87.792675
+DET0817,4182 Quarton Rd,Livonia,MI,48209,homeowner,42.493522,-83.213193
+CHI0089,5917 W Armitage Ave,Lincolnwood,IL,60625,homeowner,41.701501,-87.899253
+CHI0172,7713 W Lawrence Ave,Norridge,IL,60304,vacant,41.873852,-87.825425
+CHI0405,4248 W Chicago Ave,River Forest,IL,60641,renter,41.856781,-87.80625
+CHI0171,9559 N Cicero Ave,Lincolnwood,IL,60301,homeowner,41.893306,-87.86417
+CHI0093,5187 W North Ave,Rosemont,IL,60647,homeowner,41.695813,-87.830581
+DET0670,8743 Six Mile Rd,Redford,MI,48069,renter,42.464673,-83.25861
+CHI0422,8233 W Addison St,Forest Park,IL,60513,renter,41.925715,-87.929847
+CHI0361,6231 N Damen Ave,Rosemont,IL,60659,renter,41.971759,-87.875061
+CHI0379,7686 N Damen Ave,Rosemont,IL,60301,commercial,41.912252,-88.035202
+DET0504,5517 Michigan Ave,Bloomfield Hills,MI,48307,renter,42.225204,-83.387224
+DET0909,9438 Michigan Ave,Warren,MI,48221,homeowner,42.289294,-83.204159
+DET0578,2907 Walton Blvd,Garden City,MI,48307,homeowner,42.283594,-83.334606
+CHI0063,9350 N Harlem Ave,Morton Grove,IL,60647,homeowner,41.746649,-87.952789
+DET0650,9312 Gratiot Ave,Garden City,MI,48201,homeowner,42.200905,-83.398554
+CHI0135,8028 W Belmont Ave,Skokie,IL,60647,homeowner,41.89586,-87.816299
+CHI0347,7550 N Kedzie Ave,Morton Grove,IL,60639,multi_family,41.843463,-87.969813
