@@ -7,10 +7,14 @@
     <meta name="description" content="NPLawn LLC — Professional lawn care, tree trimming, and landscape design in Naperville and Chicagoland." />
     <title>NPLawn LLC – Premium Lawn Care</title>
     <script>
-      // Restore path after GitHub Pages 404 redirect
       (function () {
+        var base = '/np-route-planner';
         var p = new URLSearchParams(window.location.search).get('p');
-        if (p) window.history.replaceState(null, '', '/np-route-planner' + p + window.location.hash);
+        if (p) window.history.replaceState(null, '', base + p + window.location.hash);
+        // Guard: if loaded at wrong base path, hard-redirect to the correct one
+        if (!window.location.pathname.startsWith(base)) {
+          window.location.replace(base + '/rp-admin/login');
+        }
       })();
     </script>
     <script type="module" crossorigin src="/np-route-planner/assets/index-DawUcGY-.js"></script>
