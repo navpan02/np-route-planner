@@ -1,0 +1,1 @@
+import{j as r}from"./index-DIi9INCE.js";function a({active:e,activeLabel:t="Active",inactiveLabel:n="Inactive"}){return r.jsx("span",{className:`inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${e?"bg-green-100 text-green-700":"bg-gray-100 text-gray-500"}`,children:e?t:n})}export{a as S};
