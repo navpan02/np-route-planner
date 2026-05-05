@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { supabase } from '../../../lib/supabase';
 import StatusBadge from '../../../components/rp/StatusBadge';
@@ -7,13 +7,16 @@ const DEFAULT_BRANCH_ID = '00000000-0000-0000-0000-000000000001';
 const TIMEZONES = ['America/New_York','America/Chicago','America/Denver','America/Los_Angeles','America/Phoenix'];
 const EMPTY = { name: '', timezone: 'America/Chicago', zip_codes: [] };
 
+function parseZips(text) {
+  return text.split(/[\n,\s]+/).map(z => z.trim()).filter(z => /^\d{5}$/.test(z));
+}
+
 export default function BranchesTab({ session }) {
   const [branches, setBranches] = useState([]);
   const [form, setForm]         = useState(null);
+  const [zipText, setZipText]   = useState('');
   const [saving, setSaving]     = useState(false);
   const [error, setError]       = useState('');
-  const [zipInput, setZipInput] = useState('');
-  const zipRef = useRef(null);
 
   useEffect(() => {
     supabase.from('branches').select('*').order('name')
@@ -21,10 +24,17 @@ export default function BranchesTab({ session }) {
       .catch(err => console.error('Failed to load branches:', err));
   }, []);
 
+  const openForm = (branch) => {
+    const b = branch ?? { ...EMPTY };
+    setForm(b);
+    setZipText((b.zip_codes ?? []).join('\n'));
+  };
+
   const save = async (e) => {
     e.preventDefault();
     setSaving(true); setError('');
-    const { id, ...fields } = form;
+    const zips = [...new Set(parseZips(zipText))].sort();
+    const { id, ...fields } = { ...form, zip_codes: zips };
     const op = id
       ? supabase.from('branches').update(fields).eq('id', id).select().single()
       : supabase.from('branches').insert(fields).select().single();
@@ -42,34 +52,12 @@ export default function BranchesTab({ session }) {
     setBranches(prev => prev.map(b => b.id === branch.id ? { ...b, active: !b.active } : b));
   };
 
-  const addZip = () => {
-    const raw = zipInput.trim();
-    // Accept 5-digit or zip+4; normalise to 5-digit
-    const zip = raw.split('-')[0].replace(/\D/g, '').slice(0, 5);
-    if (zip.length !== 5) return;
-    if (form.zip_codes.includes(zip)) { setZipInput(''); return; }
-    setForm(f => ({ ...f, zip_codes: [...f.zip_codes, zip].sort() }));
-    setZipInput('');
-    zipRef.current?.focus();
-  };
-
-  const removeZip = (zip) => {
-    setForm(f => ({ ...f, zip_codes: f.zip_codes.filter(z => z !== zip) }));
-  };
-
-  const handleZipKey = (e) => {
-    if (e.key === 'Enter') { e.preventDefault(); addZip(); }
-    if (e.key === 'Backspace' && zipInput === '' && form.zip_codes.length > 0) {
-      removeZip(form.zip_codes[form.zip_codes.length - 1]);
-    }
-  };
-
   return (
     <div className="p-6 max-w-3xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-lg font-bold text-gray-900">Branches</h2>
         <button
-          onClick={() => { setForm({ ...EMPTY }); setZipInput(''); }}
+          onClick={() => openForm(null)}
           className="bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-green-800 transition-colors"
         >
           + Add Branch
@@ -113,7 +101,7 @@ export default function BranchesTab({ session }) {
                 <td className="px-4 py-3"><StatusBadge active={branch.active} /></td>
                 <td className="px-4 py-3 text-right whitespace-nowrap">
                   <button
-                    onClick={() => { setForm({ ...branch, zip_codes: branch.zip_codes ?? [] }); setZipInput(''); }}
+                    onClick={() => openForm({ ...branch, zip_codes: branch.zip_codes ?? [] })}
                     className="text-xs text-blue-600 hover:underline mr-3"
                   >Edit</button>
                   {branch.id !== DEFAULT_BRANCH_ID && (
@@ -161,36 +149,15 @@ export default function BranchesTab({ session }) {
                     Service ZIP Codes
                     <span className="font-normal text-gray-400 ml-1">— leave empty to allow all ZIPs</span>
                   </label>
-                  <div
-                    className="min-h-[42px] w-full border border-gray-300 rounded-lg px-2 py-1.5 flex flex-wrap gap-1 cursor-text focus-within:ring-2 focus-within:ring-green-500"
-                    onClick={() => zipRef.current?.focus()}
-                  >
-                    {form.zip_codes.map(zip => (
-                      <span
-                        key={zip}
-                        className="inline-flex items-center gap-1 bg-green-100 text-green-800 text-xs font-mono px-2 py-0.5 rounded-full"
-                      >
-                        {zip}
-                        <button
-                          type="button"
-                          onClick={e => { e.stopPropagation(); removeZip(zip); }}
-                          className="text-green-600 hover:text-green-900 leading-none"
-                        >×</button>
-                      </span>
-                    ))}
-                    <input
-                      ref={zipRef}
-                      type="text"
-                      value={zipInput}
-                      onChange={e => setZipInput(e.target.value.replace(/\D/g, '').slice(0, 10))}
-                      onKeyDown={handleZipKey}
-                      onBlur={addZip}
-                      placeholder={form.zip_codes.length === 0 ? 'Type a ZIP and press Enter…' : ''}
-                      className="outline-none text-sm flex-1 min-w-[120px] bg-transparent py-0.5"
-                    />
-                  </div>
+                  <textarea
+                    value={zipText}
+                    onChange={e => setZipText(e.target.value)}
+                    rows={5}
+                    placeholder={'48201\n48202\n48203'}
+                    className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
                   <p className="text-xs text-gray-400 mt-1">
-                    Enter 5-digit ZIP codes. Press Enter or Tab to add each one.
+                    One ZIP per line (or comma/space separated). Invalid entries are ignored on save.
                   </p>
                 </div>
 
