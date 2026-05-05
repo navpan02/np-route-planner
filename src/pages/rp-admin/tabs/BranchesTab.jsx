@@ -198,7 +198,7 @@ export default function BranchesTab({ session }) {
                 <div className="flex gap-3 pt-2">
                   <button type="button" onClick={() => setForm(null)} className="flex-1 border border-gray-300 text-gray-700 text-sm font-medium py-2 rounded-lg hover:bg-gray-50">Cancel</button>
                   <button type="submit" disabled={saving} className="flex-1 bg-green-700 text-white text-sm font-semibold py-2 rounded-lg hover:bg-green-800 disabled:opacity-60">
-                    {saving ? 'Saving…' : 'Save'}
+                    {saving ? 'Updating…' : 'Update'}
                   </button>
                 </div>
               </form>
