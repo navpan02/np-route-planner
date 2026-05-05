@@ -4,7 +4,7 @@ export default function PortalHeader({ title, session, portal, onLogout }) {
   const handleLogout = () => {
     portalLogout(portal);
     onLogout?.();
-    window.location.href = `/NP02/rp-${portal}/login`;
+    window.location.href = `/np-route-planner/rp-${portal}/login`;
   };
 
   return (
