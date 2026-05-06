@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { supabase } from '../../../lib/supabase';
 import StatusBadge from '../../../components/rp/StatusBadge';
 
@@ -86,8 +87,9 @@ export default function AgentRosterTab({ session }) {
         </table>
       </div>
 
-      {form && (
-        <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
+      {form && createPortal(
+        <div className="fixed inset-0 bg-black/40 z-50 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
           <div className="bg-white rounded-2xl shadow-xl w-full max-w-md">
             <div className="p-6 border-b border-gray-200">
               <h3 className="font-bold text-gray-900">{form.id ? 'Edit Agent' : 'Add Agent'}</h3>
@@ -128,7 +130,9 @@ export default function AgentRosterTab({ session }) {
               </div>
             </form>
           </div>
-        </div>
+          </div>
+        </div>,
+        document.body
       )}
     </div>
   );
