@@ -201,7 +201,7 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
   // ── Selected agents that received no route from the optimizer ────────────────
   const agentlessAgents = useMemo(() => {
     if (!result) return [];
-    const routeAgentIds = new Set(result.routes.map(r => r.agent_id));
+    const routeAgentIds = new Set((result.routes ?? []).map(r => r.agent_id));
     return agents.filter(a => selectedAgentIds.has(a.id) && !routeAgentIds.has(a.id));
   }, [result, agents, selectedAgentIds]);
 
@@ -209,7 +209,7 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
   const allResultTypes = useMemo(() => {
     const types = new Set();
     if (!result) return types;
-    result.routes.forEach(r =>
+    (result.routes ?? []).forEach(r =>
       r.stop_sequence?.forEach(s => { if (s.address_type) types.add(s.address_type); })
     );
     result.unassigned?.forEach(s => { if (s.address_type) types.add(s.address_type); });
@@ -219,9 +219,9 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
   // Initialise (or reset) filters whenever a new result arrives
   useEffect(() => {
     if (!result) { setFilterAgentIds(null); setFilterTypes(null); return; }
-    setFilterAgentIds(new Set(result.routes.map(r => r.agent_id)));
+    setFilterAgentIds(new Set((result.routes ?? []).map(r => r.agent_id)));
     const types = new Set();
-    result.routes.forEach(r =>
+    (result.routes ?? []).forEach(r =>
       r.stop_sequence?.forEach(s => { if (s.address_type) types.add(s.address_type); })
     );
     result.unassigned?.forEach(s => { if (s.address_type) types.add(s.address_type); });
@@ -859,8 +859,8 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
                 </div>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <StatCard label="Agents" value={result.routes.length} />
-                <StatCard label="Stops Assigned" value={result.routes.reduce((s, r) => s + (r.total_stops ?? 0), 0).toLocaleString()} accent />
+                <StatCard label="Agents" value={(result.routes ?? []).length} />
+                <StatCard label="Stops Assigned" value={(result.routes ?? []).reduce((s, r) => s + (r.total_stops ?? 0), 0).toLocaleString()} accent />
                 <StatCard label="Unassigned" value={(result.unassigned?.length ?? result.stats.unassigned).toLocaleString()} />
                 {result.stats.excluded > 0
                   ? <StatCard label="Excluded (ZIP)" value={result.stats.excluded.toLocaleString()} />
