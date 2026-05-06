@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef, useMemo, lazy, Suspense } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo, lazy, Suspense, Component } from 'react';
 import { Link } from 'react-router-dom';
 import Papa from 'papaparse';
 import { supabase } from '../lib/supabase';
@@ -91,6 +91,30 @@ function validateRows(rawRows) {
     return r;
   });
   return { rows, errors };
+}
+
+// ── Error boundary to show render errors instead of blank page ───────────────
+
+class ResultsErrorBoundary extends Component {
+  constructor(props) { super(props); this.state = { error: null }; }
+  static getDerivedStateFromError(e) { return { error: e }; }
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="px-[5%] max-w-7xl mx-auto py-10">
+          <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
+            <p className="font-bold text-red-800 mb-2">Results failed to render</p>
+            <pre className="text-red-700 text-xs whitespace-pre-wrap">{this.state.error?.message}</pre>
+            <button
+              className="mt-4 text-sm text-red-600 underline"
+              onClick={() => { this.setState({ error: null }); this.props.onReset?.(); }}
+            >Start Over</button>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
 }
 
 // ── Small stat card used in results summary ───────────────────────────────────
@@ -815,6 +839,7 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
 
       {/* ── Step 2: Results ── */}
       {status === 'done' && result && (
+        <ResultsErrorBoundary onReset={() => { setStatus('idle'); setResult(null); }}>
         <div>
           {/* Results summary strip */}
           <div className="bg-np-mid text-white px-[5%] py-6">
@@ -1050,6 +1075,7 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
             )}
           </div>
         </div>
+        </ResultsErrorBoundary>
       )}
 
     </div>
