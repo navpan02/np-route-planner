@@ -17,11 +17,22 @@ export default function BranchesTab({ session }) {
   const [zipText, setZipText]   = useState('');
   const [saving, setSaving]     = useState(false);
   const [error, setError]       = useState('');
+  const [loading, setLoading]   = useState(true);
+  const [loadError, setLoadError] = useState('');
+
+  const client = session?.portalClient ?? supabase;
 
   useEffect(() => {
-    supabase.from('branches').select('*').order('name')
-      .then(({ data }) => setBranches(data ?? []))
-      .catch(err => console.error('Failed to load branches:', err));
+    setLoading(true);
+    client.from('branches').select('*').order('name').then(({ data, error: err }) => {
+      if (err) setLoadError(err.message);
+      else setBranches(data ?? []);
+      setLoading(false);
+    }).catch(err => {
+      setLoadError(err?.message ?? 'Failed to load branches');
+      setLoading(false);
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const openForm = (branch) => {
@@ -36,8 +47,8 @@ export default function BranchesTab({ session }) {
     const zips = [...new Set(parseZips(zipText))].sort();
     const { id, ...fields } = { ...form, zip_codes: zips };
     const op = id
-      ? supabase.from('branches').update(fields).eq('id', id).select().single()
-      : supabase.from('branches').insert(fields).select().single();
+      ? client.from('branches').update(fields).eq('id', id).select().single()
+      : client.from('branches').insert(fields).select().single();
     const { data, error: err } = await op;
     setSaving(false);
     if (err) { setError(err.message); return; }
@@ -46,7 +57,7 @@ export default function BranchesTab({ session }) {
   };
 
   const toggle = async (branch) => {
-    const { error } = await supabase
+    const { error } = await client
       .from('branches').update({ active: !branch.active }).eq('id', branch.id);
     if (error) { console.error('Toggle failed:', error.message); return; }
     setBranches(prev => prev.map(b => b.id === branch.id ? { ...b, active: !b.active } : b));
@@ -64,7 +75,16 @@ export default function BranchesTab({ session }) {
         </button>
       </div>
 
+      {loadError && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700">
+          {loadError}
+        </div>
+      )}
+
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        {loading ? (
+          <div className="px-4 py-8 text-center text-gray-400 text-sm">Loading branches…</div>
+        ) : (
         <table className="w-full text-sm">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
@@ -114,6 +134,7 @@ export default function BranchesTab({ session }) {
             ))}
           </tbody>
         </table>
+        )}
       </div>
 
       {form && createPortal(

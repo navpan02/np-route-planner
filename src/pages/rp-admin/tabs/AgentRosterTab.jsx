@@ -11,14 +11,27 @@ export default function AgentRosterTab({ session }) {
   const [form, setForm]         = useState(null);
   const [saving, setSaving]     = useState(false);
   const [error, setError]       = useState('');
+  const [loading, setLoading]   = useState(true);
+  const [loadError, setLoadError] = useState('');
+
+  const client = session?.portalClient ?? supabase;
 
   useEffect(() => {
-    supabase.from('agents').select('*').order('name')
-      .then(({ data }) => setAgents(data ?? []))
-      .catch(err => console.error('Failed to load agents:', err));
-    supabase.from('branches').select('id,name').eq('active', true)
-      .then(({ data }) => setBranches(data ?? []))
-      .catch(err => console.error('Failed to load branches:', err));
+    setLoading(true);
+    Promise.all([
+      client.from('agents').select('*').order('name'),
+      client.from('branches').select('id,name').eq('active', true),
+    ]).then(([agentsRes, branchesRes]) => {
+      if (agentsRes.error) setLoadError(`Agents: ${agentsRes.error.message}`);
+      else setAgents(agentsRes.data ?? []);
+      if (branchesRes.error && !agentsRes.error) setLoadError(`Branches: ${branchesRes.error.message}`);
+      else setBranches(branchesRes.data ?? []);
+      setLoading(false);
+    }).catch(err => {
+      setLoadError(err?.message ?? 'Failed to load data');
+      setLoading(false);
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const save = async (e) => {
@@ -26,8 +39,8 @@ export default function AgentRosterTab({ session }) {
     setSaving(true); setError('');
     const { id, ...fields } = form;
     const op = id
-      ? supabase.from('agents').update(fields).eq('id', id).select().single()
-      : supabase.from('agents').insert(fields).select().single();
+      ? client.from('agents').update(fields).eq('id', id).select().single()
+      : client.from('agents').insert(fields).select().single();
     const { data, error: err } = await op;
     setSaving(false);
     if (err) { setError(err.message); return; }
@@ -36,7 +49,7 @@ export default function AgentRosterTab({ session }) {
   };
 
   const toggle = async (agent) => {
-    const { error } = await supabase
+    const { error } = await client
       .from('agents').update({ active: !agent.active }).eq('id', agent.id);
     if (error) { console.error('Toggle failed:', error.message); return; }
     setAgents(prev => prev.map(a => a.id === agent.id ? { ...a, active: !a.active } : a));
@@ -54,7 +67,16 @@ export default function AgentRosterTab({ session }) {
         </button>
       </div>
 
+      {loadError && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700">
+          {loadError}
+        </div>
+      )}
+
       <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        {loading ? (
+          <div className="px-4 py-8 text-center text-gray-400 text-sm">Loading agents…</div>
+        ) : (
         <table className="w-full text-sm">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
@@ -85,6 +107,7 @@ export default function AgentRosterTab({ session }) {
             ))}
           </tbody>
         </table>
+        )}
       </div>
 
       {form && createPortal(
