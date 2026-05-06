@@ -184,7 +184,7 @@ export default function DrawRouteTab({ session, onRouteSaved }) {
     setGenerating(true); setError(''); setSaveStatus('idle'); setConflict(null);
 
     const agent = agents.find(a => a.id === selectedAgent);
-    const { data, error: fnErr } = await supabase.functions.invoke('route-optimize', {
+    const { data, error: fnErr } = await client.functions.invoke('route-optimize', {
       body: {
         addresses: filtered.map(a => ({
           unique_id: a.id, address: a.address, city: a.city ?? '',
