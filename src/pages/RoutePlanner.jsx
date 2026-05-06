@@ -1032,6 +1032,7 @@ export default function RoutePlanner({ portalSession, portalClient } = {}) {
                   <div className="flex-1 min-w-0 rounded-2xl overflow-hidden border border-np-border shadow-np">
                     <RouteMap
                       routes={filteredResult.routes}
+                      allRoutes={result.routes}
                       unassigned={filteredResult.unassigned}
                       colourMode={colourMode}
                       selectedUnassignedId={selectedUnassigned?.unique_id ?? null}
